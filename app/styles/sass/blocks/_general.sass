@@ -1,0 +1,638 @@
+// GENERAL PROJECT STYLES
+
+.top__line
+	width: 100%
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: flex-start
+
+.container
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: flex-start
+	width: 100%
+	max-width: 1370px
+.top__line__wrap
+	width: 100%
+	height: 45px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: relative
+	padding-left: 20px
+	padding-right: 20px
+	background: #F4F4F4
+	border-radius: 11px
+.navbar__wrapp
+	position: relative
+	display: flex
+	flex: 4 1 auto
+	justify-content: flex-start
+	align-items: center
+	font-family: $userfont
+	font-weight: 400
+	font-size: 13px
+	line-height: 15px
+.contacts__wrap
+	flex: 1 1 auto
+	position: relative
+	display: flex
+	max-width: 400px
+	justify-content: space-between
+	align-items: center
+	position: relative
+
+.navbar
+	width: 100%
+	max-width: 400px
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.nav__item
+	width: 100%
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	margin-right: 50px
+
+summary
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	width: 100%
+	height: 100%
+	cursor: pointer
+	&::marker
+		list-style: none 
+		display: none
+	&::after
+		margin-left: 7px
+		content: url("#{$assetImages}/summary__close.svg")
+.first__level[open]
+	background: #FFFFFF
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07)
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.1)
+	height: 45px
+	border-radius: 0  11px 0 0
+	width: 188px
+	display: flex
+	justify-content: center
+	align-items: center
+	position: absolute
+	top: -22px
+	z-index: 10
+	summary
+		margin-left: 20px
+		&::after
+			margin-left: 7px
+			content: url("#{$assetImages}/summary__open.svg")	
+details
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+.first__level--item
+	position: relative
+	width: 100%
+	height: 40px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.1)
+	a, summary
+		margin-left: 20px
+	a
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		width: 100%
+		height: 100%
+	datalist,summary
+		height: 40px
+.first__level--item
+	background: #FFFFFF
+	&:hover
+		background: #F4F4F4
+		transition: background  .1s ease
+	a
+		&:hover
+			font-weight: normal
+.two__level--item
+	height: 40px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.1)
+	&:hover
+		background: #F4F4F4
+		transition: background  .1s ease
+	a
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		width: 100%
+		height: 100%
+.two__level
+	summary
+		&::after
+				margin-left: 7px
+				content: url("#{$assetImages}/summary__close.svg") !important
+.two__level[open]
+	width: 100%
+	background: #F4F4F4
+	width: 100%
+	summary
+		width: 100%
+		background: #F4F4F4
+		width: 100%
+		&::after
+			margin-left: 7px
+			content: url("#{$assetImages}/summary__open.svg") !important
+.container--mobail
+	display: none		
+.first__level
+	ul
+		position: absolute
+		top: 45px	
+		background: #FFFFFF
+		box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07)
+		width: 100%
+		&::last-child
+			border-radius: 0px 0px 11px 0px
+
+.nav__item--first
+	min-width: 100px
+.two__level
+	font-size: 12px
+	summary
+		position: relative
+	ul
+		position: absolute
+		left: 188px
+		top: 0.5px	
+		background: #FFFFFF
+		box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07)
+		width: 100%
+		border-radius: 0px 11px 11px 0px
+// .navbar__link
+// 	position: absolute
+// 	left: 0
+.contacts__wrap
+	.tel_mob
+		display: none
+.contact__link
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	width: 100%
+	height: 100%
+	position: relative
+	max-width: 200px
+	img
+		margin-right: 8px
+
+.overlay
+	display: none
+	position: absolute
+	top: 0
+	left: 0px
+	width: 100%
+	max-width: 250px
+	height: auto
+	z-index: 50
+.nav__item--mob
+	width: 100%
+	position: relative
+	background: #fff
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07)
+	a
+		position: relative
+		display: flex
+		width: 100%
+		height: 100%
+.navbar__wrapp__mobail
+	position: relative
+	width: 100%
+	height: auto
+	display: flex
+	padding: 10px 0
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	background: #fff
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07)
+	border-radius: 15px
+	a
+		width: 100%
+		height: 100%
+	.cross
+		margin-left: 10px
+		cursor: pointer
+.navbar--mob
+	position: relative
+	display: flex
+	flex-flow: column
+	align-items: center
+	width: 100%
+	margin-top: 15px
+	height: auto
+.nav__item--mob
+	background: #fff
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07)
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.1)
+	padding: 10px
+	width: 100%
+	position: relative
+.first__level--item--mob
+	background: #fff
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07)
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.1)
+	padding: 10px 0px 10px 20px
+	width: 100%
+	position: relative
+.first__level--mob
+	summary
+		width: 100%
+		height: 100%
+		margin-bottom: 10px
+		&::after
+			content: url("#{$assetImages}/summary__open.svg")
+.first__level--mob[open]
+	summary
+		font-weight: 600
+		&::after
+			content: url("#{$assetImages}/summary__open.svg")
+.two__level--mob
+	summary
+		width: 100%
+		height: 100%
+		font-weight: 400 !important
+		margin-bottom: 10px
+		&::after
+			content: url("#{$assetImages}/summary__close.svg") !important
+.two__level--mob[open]
+	summary
+		font-weight: 600 !important
+		&::after
+			content: url("#{$assetImages}/summary__open.svg") !important
+.two__level--item--mob
+	background: #fff
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07)
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.1)
+	padding: 10px 0px 10px 15px
+	width: 100%
+	position: relative
+.company
+	width: 100%
+.support__desc
+	width: 100%
+	position: relative
+	span
+		font-weight: 500
+.support__desc, .regist__desc
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	flex-flow: row nowrap
+	font-size: 16px
+	position: relative
+.menu__wrap, .menu__dekstop
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: relative
+.menu__dekstop
+	height: 90px 
+.menu__wrap
+	padding-left: 0px
+	padding-right: 20px
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+	margin-bottom: 37px
+.menu
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: relative
+	flex: 3 1 auto
+.tel
+	flex: 1 1 auto
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	position: relative
+.menu__link
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	position: relative
+	font-size: 18px
+	font-weight: 400
+	line-height: 26px
+.menu__logo
+	width: 140px
+	align-self: flex-start
+.menu__link--green
+	border-bottom: 1px solid $accent
+.menu__link--blue
+	border-bottom: 1px solid #0094FF
+
+//slider
+	// GENERAL PROJECT STYLES
+.section__slider
+	position: relative
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: $gutter*2
+.slider__startPanel
+	position: relative
+	width: 100%
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	background: #939393
+.slider__top
+	position: relative
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: center
+	align-items: center
+.container
+	padding: 0 20px
+.slider__top--slide
+	width: 100%
+.top__slide--img
+	display: block
+	width: 100%
+	height: auto
+	img
+		width: 100%
+
+.top__slide--desc
+	position: absolute
+	left: 75px
+	top: 100px
+	z-index: 50
+	width: 100%
+	max-width: 670px
+	line-height: 1.3
+.top__slide--title
+	font-weight: 400
+	font-size: 17px
+	line-height: 22px
+	letter-spacing: 0.3em
+	color: #FFFFFF
+	opacity: 0.4
+	margin-bottom: 10px
+.top__slide--text
+	font-weight: 600
+	font-size: 50px
+	line-height: 56px
+	color: #FFFFFF
+	margin-bottom: 20px
+.top__slide--buttons
+	margin-top: 20px
+.button__startPanel
+	padding: 15px 24px
+	font-size: 16px
+	font-weight: normal
+	text-transform: uppercase
+.button__top__slide--detail
+	padding: 17px 47px
+	margin-right: 20px
+		border: 3px solid lighten($accent, 5%)
+	&:active
+		border: 3px solid darken($accent, 5%)
+.button__top__slide--sales
+	box-sizing: border-box
+	background: none
+	color: $textcolor
+	border: 3px solid $textcolor
+	&:hover
+		border: 3px solid lighten($accent, 5%)
+	&:active
+		border: 3px solid darken($accent, 5%)
+.swiper-pagination-bullet.swiper-pagination-bullet-active
+	background: $accent
+.swiper-pagination-bullet
+	background: #fff
+.swiper-button-next
+	margin-left: 20px
+.swiper-pagination-bullets.swiper-pagination-horizontal
+	bottom: 18px
+.swiper-button-prev, .swiper-button-next
+	color: #fff
+	opacity: 0.7
+	&:hover
+		opacity: 1
+		transition: opacity 0.3s ease-in
+		&::after
+			color: $accent
+			opacity: 1
+			transition: opacity 0.3s ease-in
+	&::after
+		color: #fff
+		font-size: 24px
+		font-weight: 700
+.tel
+	img
+		margin-right: 8px
+.swiper-pagination
+	width: 10px
+	height: 10px
+.pagination
+	margin-top: 115px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	width: 100%
+	max-width: 200px
+.swiper--prev__next
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	position: relative
+.swiper-button-next, .swiper-button-prev
+	position: relative
+.swiper-button-next:after, .swiper-button-prev:after
+	font-size: 14px
+.sales__desc--item
+	position: relative
+	width: 270px
+	height: 65px
+	padding: 5px
+	font-size: 10px
+	color: #fff
+	margin-left: 15px
+	display: flex
+	line-height: 1.3
+.sales__desc--fon
+	position: absolute
+	top: 0
+	left: 0
+	width: 270px
+	height: 65px
+	background: #939393
+	opacity: 0.9
+	z-index: 50
+.sales__desc--img
+	z-index: 60	
+	margin-right: 12px
+.sales__desc__text--wrap
+	z-index: 60
+.sales__desc--title
+	font-size: 10px
+	font-weight: normal
+.sales__desc--text
+	font-size: 12px
+	font-weight: 700 
+.swiper-pagination
+	display: flex
+	justify-content: flex-start
+	align-items: flex-end
+.media-footer__icon--wrap
+	display: flex
+
+.media-footer__icon
+	display: flex
+	width: 38px
+	height: 38px
+	margin-right: 12px
+	border-radius: 50px
+	&:hover
+		background: rgba(29, 29, 29, 0.068)
+
+//slider--finish
+//section__cotact_form
+.section__application, .section__cotact_form
+	position: relative
+	height: auto
+	display: flex
+	justify-content: center
+	align-items: flex-start
+.section__application
+	margin-bottom: $gutterSection+30px
+.section__cotact_form
+	margin-top: 23px
+	margin-bottom: $gutter*2
+.section__cotact_form
+	width: 100%
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: center
+.contact_form-label
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	flex: 1 1 auto
+.section__cotact--title
+	font-weight: 600
+	font-size: 40px
+	line-height: 56px
+.contact_form-input
+	display: flex
+	flex: 1 1 auto
+	width: 100%
+	max-width: 325px
+	height: 77px
+	border: 1px solid rgba(29, 29, 29, 0.3)
+	border-radius: 20px
+	margin-right: 16px
+	font-size: 16px
+	font-weight: 400
+	padding-left: 24px
+	&::placeholder
+		font-weight: 400
+		font-size: 20px
+		line-height: 26px
+		color: #000000
+		opacity: 0.4
+.application__button
+	border-radius: 20px
+	font-size: 20px
+	height: 77px
+
+.application__items
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.application__item
+	position: relative
+	width: 440px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	margin-right: 25px
+.application__item--img
+	width: 100%
+	position: relative
+.application__item--desc
+	position: absolute
+	bottom: 15px
+	left: 15px
+	background: rgba(29, 29, 29, 0.85)
+	backdrop-filter: blur(12px)
+	border-radius: 26px
+	width: 90%
+	height: auto
+	min-height: 247px
+	padding: 24px
+.application__item__desc--wrap
+	display: flex
+	position: relative
+	width: 100%
+	height: 200px
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+.application__item__button
+	position: absolute
+	bottom: 0
+.footer__media, .footer__contacts, .footer__navigation, .green-wave-footer
+	width: 240px
+.application__item--title
+	width: 100%
+	font-weight: 600
+	font-size: 24px
+	line-height: 26px
+	color: #FFFFFF
+	text-align: left
+	margin-bottom: 6px
+.footer__row
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	flex: 1 1 auto
+.application__item--text
+	width: 100%
+	font-weight: 400
+	font-size: 15px
+	line-height: 23px
+	color: #FFFFFF
+	text-align: left
+	margin-bottom: 15px
+.button__wrap
+	position: relative
+	width: 100%
+.application__item__button
+	width: 100%
+	max-width: none
+//section__cotact_form--finish

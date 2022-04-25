@@ -1,0 +1,247 @@
+//`@media (max-width: 1400px) { ...}
+@include media-breakpoint-down(xxl)
+	.tel__desc
+		font-size: 12px
+	.tel
+		img
+			width: 20px
+			height: 20px
+	.menu__logo
+		width: 100px
+	.menu__link
+		font-size: 16px
+	.logo
+		width: 140px
+	.menu__dekstop
+		height: 70px 
+	.item-news
+		max-width: 280px
+	.news__items
+		justify-content: flex-start
+		flex-flow: row wrap
+	.pagination
+		margin-top: 60px
+	
+	.top__slide--text
+		font-size: 36px
+		line-height: 1.2
+//`@media (max-width:  1200px) { ...}
+@include media-breakpoint-down(xl)
+	.menu__wrap
+		padding-left: 20px
+
+
+
+	.application__item--text
+		font-size: 14px
+		line-height: 1.1
+	.pagination
+		margin-top: 50px
+	.top__slide--desc
+		max-width: 470px
+		top: 65px
+		left: 50px
+	.footer__body 
+		justify-content: center
+		align-items: flex-start
+		flex-flow: column nowrap
+	.footer__row
+		justify-content: space-evenly
+		align-items: flex-start
+	.footer__media, .footer__contacts, .footer__navigation, .green-wave-footer
+		display: flex
+		width: 240px
+		flex-flow: column nowrap
+		justify-content: flex-start
+		align-items: flex-start
+	.button__top__slide--detail
+		padding: 12px 37px
+		font-size: 14px
+	.top__slide--text
+		font-size: 36px
+		line-height: 1.2
+	.section__cotact_form
+		flex-flow: column nowrap
+	.section__cotact_form
+		justify-content: flex-start
+		align-items: flex-start
+		margin-bottom: $gutter 
+	.application__button
+		margin-top: $gutter
+	.contact_form-label
+		width: 100%
+	.green-wave-footer__logo
+		margin: 0 0 8px 0
+		img
+			width: 180px
+	.contact_form-input, .application__button
+		height: 60px
+	.support__desc, .regist__desc
+		font-size: 12px
+	.application__item--desc
+		padding: 15px
+		height: 200px
+		width: 93%
+		left: 10px
+		bottom: -50px
+	.application__item__desc--wrap
+		height: 220px
+//`@media (max-width: 992px) { ...}
+@include media-breakpoint-down(lg)
+	.application__item--desc
+		left: 3%
+		padding-bottom: 0
+	.application__items
+		flex-flow: row wrap
+	.application__item
+		width: 250px
+		margin-bottom: $gutter*2
+	.application__item--title
+		font-size: 20px
+	.navbar__wrapp
+		display: none
+	.container--mobail
+		display: flex
+	.tel_desc
+		display: none
+		.tel__desc
+			font-size: 10px
+	.contacts__wrap
+		.tel_mob
+			display: flex
+			margin-right: 20px
+	.contacts__wrap
+		justify-content: flex-end
+		max-width: 500px
+	.contact__link--regist
+		width: 123px
+	.contact__link
+		max-width: 170px
+	.support__desc
+		justify-content: flex-start
+	.menu__link
+		font-size: 14px
+	.menu__dekstop
+		height: auto
+		padding: 10px 0
+	.menu__dekstop
+		flex-flow: column nowrap
+		align-items: flex-start
+	.menu
+		width: 100%
+		flex: 1 1 auto
+		justify-content: space-evenly
+	.menu__logo
+		display: none
+	.top__slide--desc
+		max-width: 370px
+		top: 35px
+		left: 50px
+	.top__slide--text
+		font-size: 26px
+	.button__top__slide--detail
+		padding: 10px 25px
+		font-size: 14px
+//`@media (max-width: 768px) { ...}
+@include media-breakpoint-down(md)
+	.application__item
+		width: 240px
+		margin-bottom: $gutter*2
+	.section__cotact--title
+		width: 100%
+		text-align: center
+	.contact_form-label
+		flex-flow: column nowrap
+		justify-content: center
+		align-items: center
+	.section__cotact_form
+		justify-content: center
+		align-items: center
+	.application__button
+		margin-top: 0
+	.contact_form-input
+		margin-bottom: $gutter
+	.pagination
+		margin-top: 30px
+	.top__slide--text
+		font-size: 18px
+		margin-bottom: 10px
+	.button__top__slide--detail
+		padding: 8px 18px
+		font-size: 12px
+	.top__slide--buttons
+		margin-top: 0
+	.news__items
+		grid-template-columns: none
+	.about__items, .footer__body
+		grid-template-columns: none
+		justify-content: center
+		align-items: center
+	.about__text,.about__title, .news__title
+		text-align: center
+	.top__slide--title
+		font-size: 14px
+		margin-bottom: 5px
+	.green-wave-footer__logo
+		img
+			width: 150px
+//`@media (max-width: 576px) { ...}
+@include media-breakpoint-down(sm)
+	.application__items
+		align-items: center
+		justify-content: center
+	.application__item
+		width: 100%
+		max-width: 368px
+		display: flex
+		align-items: center
+		justify-content: center
+	.application__item
+		margin-right: 0
+	.application__item--desc
+		bottom: 15px
+	.news
+		padding-bottom: 0
+		margin-bottom: $gutter
+	.section__application
+		margin-bottom: 0
+	.menu__wrap
+		padding-right: 0px
+		padding-left: 0px
+		margin-bottom: $gutter
+	.section__slider
+		margin-bottom: $gutter
+	.contacts__wrap
+		.tel_mob
+			display: none
+	.menu__link
+		font-size: 12px
+	.container
+		padding-left: 0px
+		padding-right: 0px
+	.news__items
+		justify-content: center
+	.item-news
+		max-width: 380px
+	.footer__row
+		flex-flow: column nowrap
+	.footer__media
+		margin-bottom: 0
+	.top__slide--desc
+		max-width: 190px
+		top: 10px
+		left: 10px
+	.pagination
+		position: absolute
+		bottom: -40px
+		left: 0px
+	.swiper--prev__next
+		display: none
+	.button__top__slide--detail
+		padding: 5px 10px
+		font-size: 9px
+	.top__slide--text
+		font-size: 14px
+	.top__slide--title
+		font-size: 12px
+		margin-bottom: 0
