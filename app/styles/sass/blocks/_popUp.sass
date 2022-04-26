@@ -1,0 +1,259 @@
+/*------------Форма заказа ---------------- */
+
+///Форма обратной связи
+.popup__bg 
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100vh
+	z-index: 10000
+	padding: 20px
+	background: rgba(0,0,0,0.5)
+	backdrop-filter: blur(4px)
+	opacity: 0 // Скрываем фон и сам попап
+	pointer-events: none // Запрещаем ему быть целью событий
+	transition: 0.5s all
+	// overflow: auto       
+.popup__bg.active  // При добавлении класса 'active'
+	opacity: 1 // Показываем фон и попап
+	pointer-events: all // Возвращаем события
+	transition: 0.5s all
+.popupTwo
+	.popup__content--title
+		display: flex
+		flex-flow: column nowrap
+		justify-content: center
+		align-items: center
+		img
+			margin-bottom: 20px
+
+.popup, .popupTwo 
+	position: relative
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%) scale(0) // Центрируем и масштабируем в 0 само окно
+	background: #fff
+	border-radius: 16px
+	width: 100%
+	max-width: 574px
+	transition: 0.5s all
+.popup
+	height: 90vh
+	overflow: auto
+	&::-webkit-scrollbar 
+		width: 5px
+		height: 80%
+		border-radius: 20px
+	&::-webkit-scrollbar-thumb
+		width: 5px
+		border-radius: 50px
+		background: rgba(0,0,0,0.5)
+	&::-webkit-scrollbar-track
+		background: rgba(0,0,0,0)
+	&::-webkit-scrollbar-button 
+		background: #ff050500
+		height: 30px
+.popup__content
+	// position: relative
+	// display: flex
+	// justify-content: flex-start
+	// align-items: flex-start
+	// flex-flow: column nowrap
+	background: #FFFFFF
+	border-radius: 25px
+	width: 80%
+	max-width: 1081px
+	// margin-right: auto
+	// margin-left: auto
+	padding: 45px
+	
+
+.popup__title
+	font-size: 24px
+	font-weight: 600
+	color: $accent
+	margin-bottom: 32px
+	margin-top: 48px
+	span
+		color: $textcolor
+
+.popup.active, .popupTwo.active  // При добавлении класса 'active'
+	transform: translate(-50%, -50%) scale(1) // Так же центрируем и плавно увеличиваем
+	transition: 0.5s all
+
+
+
+
+/* Конец важной части */
+/* Далее код для стилизации формы */
+.close-popup, .close-popup__two
+	position: absolute
+	top: 20px
+	right: 20px
+	cursor: pointer
+
+
+
+
+.popup .label__text 
+	font-size: 14px
+	font-weight: 400	
+	color: #696F79
+	margin-bottom: 5px
+
+
+		
+
+
+
+.popup input:focus 
+	border: 1px solid $accent
+
+
+.popup input:focus + .label__text 
+	color: $accent
+
+.popup textarea:focus 
+	border: 1px solid $accent
+
+.section__popup_form
+	margin-top: $gutter
+
+.popup textarea
+	&:focus .label__text 
+		color: $accent
+
+
+
+
+.popup__content--title
+	font-weight: 600
+	font-size: 40px
+	line-height: 39px
+	/* identical to box height, or 98% */
+	margin-bottom: $gutter
+
+	color: #1D1D1D
+
+.popup__content--icons
+	display: flex
+	width: 100%
+	position: relative
+	justify-content: space-between
+	align-items: flex-start
+	margin-bottom: 50px
+.section__popup_form
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+.popup_form
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+.popup_form-label
+	position: relative
+	width: 100%
+	flex: 2 1 auto
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	align-items: flex-start
+.popup_form__button
+	flex: 1 1 auto
+.popup_form-input
+	display: flex
+	position: relative
+	width: 100%
+	height: 46px
+	padding-left: 24px
+	margin-right: 16px
+	border: 1px solid rgba(0, 0, 0, 0.3)
+	box-sizing: border-box
+	border-radius: 20px
+
+.popup__content--icon
+	display: flex
+	align-items: center
+	justify-content: space-between
+	background: #F4F4F4
+	border-radius: 20px
+	width: 100%
+	max-width: 309px
+	img
+		margin-right: 24px
+.popup__content--footer
+	font-weight: 400
+	font-size: 12px
+	color: #1D1D1D	
+	position: relative
+	width: 100%
+	justify-content: center
+	align-items: center
+	text-align: center
+	margin-top: 28px
+	a
+		color: $accent
+		border-bottom: 1px solid $accent
+		&:hover
+			color: #1D1D1D
+			border-bottom: 1px solid #000
+.popup__content__icon--desc
+	font-weight: 400
+	display: flex
+	justify-content: flex-start
+	align-items: flex-end
+	width: 100%
+	position: relative
+	font-size: 17px
+	line-height: 26px
+	/* identical to box height, or 153% */
+	color: #1D1D1D
+	span
+		font-weight: 600
+		font-size: 35px
+		line-height: 26px
+		margin-right: 11px
+		/* identical to box height, or 74% */
+
+
+		color: #1D1D1D
+	
+
+.popup__content--desc
+	width: 100%
+	// height: 400px
+	position: relative
+	justify-content: flex-start
+	align-items: flex-start
+	padding: $gutter
+	background: #F4F4F4
+	border-radius: 20px
+	text-align: left
+	// overflow: auto 
+.popup__content__desc--title
+	font-style: normal
+	font-weight: 600
+	font-size: 27px
+	line-height: 36px
+	/* identical to box height, or 133% */
+	margin-bottom: 20px
+
+	color: #1D1D1D
+
+.popup__content__desc--text
+	font-style: normal
+	font-weight: 400
+	font-size: 16px
+	line-height: 26px
+	/* or 162% */
+	margin-bottom: 20px
+
+	color: #1D1D1D
+
+/*------------конец Формы заказа ---------------- */

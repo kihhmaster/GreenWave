@@ -257,6 +257,10 @@ body {
 			position: relative;
 			display: inline;
 			color: #1D1D1D;
+			&:hover {
+				font-weight: normal;
+				color: $accent;
+			}
 			&::after{
 				content: "";
 				position: absolute;
@@ -274,6 +278,10 @@ body {
 	}
 	&__link.blue {
 		a{
+			&:hover {
+				font-weight: normal;
+				color: #0094FF;
+			}
 			&::after{
 				background-color: #0094FF;
 			}

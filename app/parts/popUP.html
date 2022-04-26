@@ -1,7 +1,7 @@
 
-<div class="popup__overlay hidden">
-	<div class="popup__content">
-		<div class="close"><img src="images/dist/close__popUp.svg"></div>
+<div class="popup__bg">
+	<div class="popup__content popup">
+		<div class="close-popup"><img src="images/dist/close__popUp.svg"></div>
 		<div class="popup__content--title">Тариф "Все за 900"</div>
 		<div class="popup__content--icons">
 			<div class="popup__content--icon">
@@ -44,8 +44,31 @@
 				<br>
 				Информация на данном сайте является публичной офертой. Отправляя заявку на подключение через форму обратной связи на сайте или через оператора контакт-центра, вы соглашаетесь с публичной офертой.</div>
 		</div>
-		<div class="popup__content--footer"></div> 
-		<!--#include virtual="/parts/form.html" -->
+		<div class="section__popup_form">
+			<form class="popup_form" action="#" method="post" name="contact">
+				<label class="popup_form-label">
+					<input class="popup_form-input" type="text"  name="name"  placeholder="Введите ваше имя">
+					<input class="popup_form-input" name="phone" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите ваш телефон">
+				</label>
+				<button type="submit" class="button popup_form__button">подключить</button>
+			</form>
+		</div>
+		<div class="popup__content--footer">Отправляя свои данные, я принимаю <a href="#">Пользовательское соглашение.</a></div> 
 	</div>
-
+</div>
+<div class="popup__bg popup__bg__two">
+	<div class="popup__content popupTwo">
+		<div class="close-popup__two"><img src="images/dist/close__popUp__two.svg "></div>
+		<div class="popup__content--title"><img src="images/dist/popup__content--title-imgTwo.svg" alt="icon"><span>Тариф "Все за 900"</span></div>
+		<div class="section__popup_form">
+			<form class="popup_form" action="#" method="post" name="contact">
+				<label class="popup_form-label">
+					<input class="popup_form-input" type="text"  name="name"  placeholder="Введите ваше имя">
+					<input class="popup_form-input" name="phone" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите ваш телефон">
+				</label>
+				<button type="submit" class="button popup_form__button">подключить</button>
+			</form>
+		</div>
+		<div class="popup__content--footer">Отправляя свои данные, я принимаю <a href="#">Пользовательское соглашение.</a></div> 
+	</div>
 </div>
