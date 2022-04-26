@@ -35,4 +35,29 @@ document.addEventListener('DOMContentLoaded', () => {
 		},		
 	})
 
+
+	///popUP
+	var popup = document.querySelector(".popup__overlay");
+	var internetCardButtonTariff = document.querySelectorAll(".internet__card__button--tariff");
+	var close = document.querySelector(".close");
+
+	internetCardButtonTariff.forEach(element => {
+		element.addEventListener("click", function(event){
+			event.preventDefault();
+			popup.classList.remove("hidden");
+		});
+	});
+
+	popup.addEventListener("click", function(event) {
+		e = event || window.event
+		if (e.target == this) {
+			popup.classList.add("hidden");
+		}
+	});
+
+	close.addEventListener("click", function(event){
+			event.preventDefault();
+			popup.classList.add("hidden");
+	});
+	///popUP--finifh
 })

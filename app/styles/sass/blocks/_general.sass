@@ -396,7 +396,7 @@ details
 	color: #FFFFFF
 	opacity: 0.4
 	margin-bottom: 10px
-.top__slide--text
+.top__slide--text, .top__title
 	font-weight: 600
 	font-size: 50px
 	line-height: 56px
@@ -636,3 +636,306 @@ details
 	width: 100%
 	max-width: none
 //section__cotact_form--finish
+
+
+//section__iternet
+.section__iternet
+	width: 100%
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	align-items: center
+	justify-content: center
+.internet__bg
+	width: 100%
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: top right
+	background-image: url(#{$assetImages}/internet__bg.webp)
+	margin-bottom: $gutter*2
+.top__bg
+	height: 532px
+.top__text
+	font-weight: 400
+	font-size: 18px
+	line-height: 30px
+	color: #FFFFFF
+	margin-bottom: 20px
+.internet__bg--desc
+	margin-top: 130px
+	margin-left: 75px
+	width: 100%
+	max-width: 400px
+.internet__tariff--title
+	font-weight: 600
+	font-size: 40px
+	line-height: 56px
+	margin-bottom: $gutter
+	width: 100%
+	max-width: 1018px
+.internet__tariff
+	width: 100%
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	text-align: center
+	margin-bottom: $gutter*2
+.internet__tariff--select
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	margin-bottom: $gutter
+.tariff--selects
+	width: 100%
+	max-width: 529px
+	position: relative
+	box-sizing: border-box
+	height: 77px
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 0 15px 
+	border-radius: 20px
+	border: 1px solid rgba(29, 29, 29, 0.3)
+.tariff--select
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	font-weight: 400
+	font-size: 20px
+	line-height: 26px
+	height: auto
+	z-index: 40
+	summary
+		height: 77px
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0 39px
+			
+	&[open]
+		summary
+			font-weight: 600 
+			&::after
+				font-weight: 600 
+				content: url("#{$assetImages}/summary__open.svg")
+.tariff__list
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	border-radius: 0 0 20px 20px
+	box-sizing: content-box
+	border: 1px solid rgba(29, 29, 29, 0.3)
+	background: #fff
+	position: absolute
+	top: 60px
+	left: 0
+.tariff__list--item
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	a
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		background: #ffffff00
+		width: 100%
+		padding-left: 39px
+		height: 63px
+	&:hover
+		a
+			color: #fff
+			background: $accent
+			transition: background .1s ease
+			
+.internet__sale
+	position: relative
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-bottom: $gutter*2
+.internet__sale--items
+	justify-content: center
+.internet__sale--item
+	margin: 0 10px
+.internet__sale--desc
+	height: 247px
+.internet__map
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	margin-bottom: $gutter*2
+.internet__map__button
+	background: #fff
+	border-radius: 12px
+	border: 1px solid $accent
+	color: #000
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: $gutter
+	img
+		margin-left: 14px
+.internet__cards
+	position: relative
+	width: 100%
+	background:  #F4F4F4
+	display: flex
+	justify-content: center
+	align-items: center
+	padding-top: $gutter*2
+	padding-bottom: $gutter*2
+	margin-bottom: $gutter*2 
+.internet__cards--decs
+	font-weight: 400
+	font-size: 27px
+	line-height: 46px
+	color: #9599A1
+	margin-bottom: 10px
+.internet__cards--title
+	font-weight: 600
+	font-size: 40px
+	line-height: 56px
+	color: #000000
+	margin-bottom: $gutter
+.internet__cards--wrap
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.internet__card
+	position: relative
+	width: 442px 
+	padding: 43px 29px 22px 29px
+	background: #fff
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	border-radius: 25px
+.internet__card--img
+	position: absolute
+	top: 0
+	right: 0
+	z-index: 0
+.internet__card--title
+	font-weight: 700
+	font-size: 28px
+	line-height: 39px
+	color: #000000
+	margin-bottom: 23px
+.card__speed, .card__cost
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.internet__card--speed, .internet__card--cost
+	position: relative
+	width: 100%
+	max-width: 300px
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	margin-bottom: 20px
+	img
+		margin-right: 10px
+.card__speed--desc, .card__cost--desc
+	font-weight: 400
+	font-size: 16px
+	line-height: 26px
+	color: #9599A1
+
+.card__cost--title, .card__speed--title
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	font-weight: 600
+	font-size: 16px
+	line-height: 26px
+	color: #000
+.internet__card
+	margin-right: 20px
+	.button
+		width: 100%
+		margin-bottom: 15px
+.internet__card__button--tariff
+	background-color: #fff
+	color: $accent
+	border: 1px solid $accent
+
+	//section__iternet--finish
+.popup__content--desc
+	.section__cotact_form
+		margin-bottom: 0 !important
+.internet__city__sale
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	align-items: center
+	flex-flow: column nowrap
+	position: relative
+	margin-bottom: $gutter*2
+.city__sale__items
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	align-items: center
+	position: relative
+	flex-flow: row wrap
+.internet__city__sale--title
+	width: 100%
+
+	font-weight: 600
+	font-size: 40px
+	line-height: 56px
+	color: #1D1D1D
+	margin-bottom: $gutter
+.city__sale__item
+	position: relative
+	width: 328px
+	height: auto
+	padding: 12px
+	margin-right: 20px
+	margin-bottom: $gutter
+	background: #F4F4F4
+	border-radius: 25px
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+.city__sale__item--img
+	margin-bottom: 20px
+	border-radius: 20px
+.city__sale__item--date
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	font-weight: 400
+	font-size: 17px
+	line-height: 26px
+	color: #1D1D1D
+	margin-bottom: 20px
+	img
+		margin-right: 11px
+.city__sale__item--desc
+	font-weight: 400
+	font-size: 18px
+	line-height: 26px
+	color: #1D1D1D
+	margin-bottom: 40px
