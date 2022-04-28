@@ -21,7 +21,8 @@ $assetImages: "../images/dist"
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
 @import 'node_modules/swiper/swiper-bundle'
-@import 'node_modules/mmenu-light/dist/mmenu-light'
+@import 'node_modules/animate.css/animate'
+
 // @import 'node_modules/animate.css/animate'
 // FONTS LOAD SECTION
 	
@@ -82,7 +83,8 @@ body
 a
 	text-decoration: none
 	color: $textcolor
+	transition: text-shadow .3s
 	&:hover
 		color: $textcolor
-		font-weight: 600
+		text-shadow: 0 0 .65px #333, 0 0 .65px #333
 		// transition: font-weight 0.09s ease

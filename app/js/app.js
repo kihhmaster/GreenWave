@@ -40,11 +40,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	internetTariffButton.addEventListener('click', ()=> {
 		internetMap.classList.remove('hidden')
+		internetMap.classList.remove('animate__fadeOut')
+		internetMap.classList.add('animate__fadeIn')
+		
 		
 	})
 	interneMapButton.addEventListener('click', ()=> {
-		internetMap.classList.add('hidden')
+		internetMap.classList.remove('animate__fadeIn')
+		internetMap.classList.add('animate__fadeOut')
+		setTimeout(hiddenDely, 900);
 	})
+
+	function hiddenDely() {
+		internetMap.classList.add('hidden')
+	}
+	
+	
 
 	///popUP
 	let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
@@ -90,6 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			popupTwo.classList.remove('active'); // И с окна
     }
 	});
+	// document.body.onclick = () => {
+	// 	// Найти все открытые <details>
+	// 	document.body.querySelectorAll('.first__level[open]')
+	// 		// И закрыть каждый из них
+	// 		.forEach(e => e.open = false)
+	// }
 
 	///popUP--finifh
 })

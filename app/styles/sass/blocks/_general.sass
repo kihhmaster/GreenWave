@@ -91,8 +91,9 @@ summary
 	.first__level--title
 		position: absolute
 		left: 0
+		transition: text-shadow .3s
 		&:hover
-			font-weight: 600
+			text-shadow: 0 0 .65px #333, 0 0 .65px #333
 
 .first__level[open]
 	background: #FFFFFF
@@ -106,14 +107,28 @@ summary
 	align-items: center
 	position: absolute
 	top: -22px
+	left: 0
 	z-index: 10
 	.first__level--title
 		margin-left: 20px
 		font-weight: 600
+		&:hover
+			text-shadow: 0 0 .65px #13131300, 0 0 .65px #33333300
 		&::after
 			margin-left: 7px
 			content: url("#{$assetImages}/summary__open.svg")
-	
+.internet__tariff--button	
+	display: flex
+	justify-content: center
+	align-items: center
+	font-weight: 400
+	font-size: 18px
+	line-height: 26px
+	/* identical to box height, or 144% */
+	text-align: center
+	color: #FFFFFF
+	img
+		margin-right: 9px
 details
 	position: relative
 	width: 100%
@@ -330,6 +345,7 @@ details
 	flex-flow: row nowrap
 	font-size: 16px
 	position: relative
+		
 .regist__desc, .tel__desc
 	justify-content: center
 	font-size: 16px
@@ -492,9 +508,13 @@ details
 .tel
 	img
 		margin-right: 155px
-.support__desc--link
+.support__desc--link, .menu__link
 	&:hover
-		font-weight: normal
+		text-shadow: none
+.green-wave-footer__link
+	a
+		&:hover
+			text-shadow: none
 .swiper-pagination
 	width: 10px
 	height: 10px
@@ -642,6 +662,16 @@ details
 	height: auto
 	min-height: 247px
 	padding: 24px
+.tv_item--desc
+	position: absolute
+	bottom: 15px
+	left: 15px
+	background: rgba(29, 29, 29, 0.85)
+	backdrop-filter: blur(12px)
+	border-radius: 26px
+	width: 90%
+	height: 168px
+	padding: 24px
 .application__item__desc--wrap
 	display: flex
 	position: relative
@@ -650,13 +680,29 @@ details
 	justify-content: flex-start
 	align-items: flex-start
 	flex-flow: column nowrap
+.tv__item__desc--wrap
+	display: flex
+	position: relative
+	width: 100%
+	height: auto
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
 .media-footer--link
 	&:hover
-		filter: blur(px)
+		filter: blur(1px)
 .application__item__button
 	position: absolute
 	bottom: -10px
 	height: 59px
+	display: flex
+	align-items: center
+	justify-content: center
+.tv__item--button
+	position: absolute
+	bottom: 0
+	height: 59px
+	width: 100%
 	display: flex
 	align-items: center
 	justify-content: center
@@ -702,12 +748,33 @@ details
 	flex-flow: column nowrap
 	align-items: center
 	justify-content: center
+.section
+	width: 100%
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	align-items: center
+	justify-content: center	
 .internet__bg
 	width: 100%
 	background-size: contain
 	background-repeat: no-repeat
 	background-position: top right
 	background-image: url(#{$assetImages}/internet__bg.webp)
+	margin-bottom: $gutter*2
+.tv__bg
+	width: 100%
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: top right
+	background-image: url(#{$assetImages}/tv__bg.webp)
+	margin-bottom: $gutter*2
+.video__bg
+	width: 100%
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: top right
+	background-image: url(#{$assetImages}/video__bg.webp)
 	margin-bottom: $gutter*2
 .top__bg
 	height: 532px
@@ -722,6 +789,10 @@ details
 	margin-left: 75px
 	width: 100%
 	max-width: 400px
+.video__bg--desc
+	max-width: 800px
+.video__bg--text
+	max-width: 500px
 .internet__tariff--title
 	font-weight: 600
 	font-size: 40px
@@ -774,12 +845,14 @@ details
 		justify-content: space-between
 		align-items: center
 		padding: 0 39px
-			
+		transition: text-shadow .3s
+		&:hover
+			text-shadow: 0 0 .65px #333, 0 0 .65px #333	
 	&[open]
 		summary
-			font-weight: 600 
+			text-shadow: 0 0 .65px #333, 0 0 .65px #333
 			&::after
-				font-weight: 600 
+				text-shadow: 0 0 .65px #333, 0 0 .65px #333
 				content: url("#{$assetImages}/summary__open.svg")
 .tariff__list
 	width: 100%
@@ -830,6 +903,7 @@ details
 .internet__map
 	position: relative
 	width: 100%
+	height: 80vh
 	display: flex
 	flex-flow: column nowrap
 	justify-content: center
@@ -844,8 +918,38 @@ details
 	align-items: center
 	justify-content: center
 	margin-top: $gutter
-	img
-		margin-left: 14px
+	width: 100%
+	max-width: 178px
+	height: 50px
+	&:hover
+		.internet__map__button--img
+			display: flex
+			justify-content: center
+			align-items: center
+			&::after
+				content: url("#{$assetImages}/internet__map__button--white.svg")
+.application__item__button
+	font-weight: 400
+	font-size: 18px
+	line-height: 26px
+	text-align: center
+	color: #FFFFFF
+	&:hover
+		font-weight: normal
+		text-shadow:  none
+.internet__map__button--img
+	position: relative
+	margin-top: 5px
+	margin-left: 12px
+	display: flex
+	justify-content: center
+	align-items: center
+	&::after
+		content: url("#{$assetImages}/internet__map__button.svg")
+			
+	&:hover
+		img
+			fill: #fff
 .internet__cards
 	position: relative
 	width: 100%
@@ -953,10 +1057,9 @@ details
 	justify-content: flex-start
 	align-items: center
 	position: relative
-	flex-flow: row wrap
+	flex-flow: row nowrap
 .internet__city__sale--title
 	width: 100%
-
 	font-weight: 600
 	font-size: 40px
 	line-height: 56px
@@ -964,7 +1067,8 @@ details
 	margin-bottom: $gutter
 .city__sale__item
 	position: relative
-	width: 328px
+	width: 100%
+	max-width: 328px
 	height: auto
 	padding: 12px
 	margin-right: 20px
@@ -975,6 +1079,8 @@ details
 	flex-flow: column nowrap
 	justify-content: flex-start
 	align-items: flex-start
+	img
+		width: 100%
 .city__sale__item--img
 	margin-bottom: 20px
 	border-radius: 20px

@@ -32,12 +32,12 @@
 						<ul class="navbar--mob">	
 							<li class="nav__item--mob">
 								<details class="first__level--mob">
-									<summary>о компании</summary>
+									<summary class="first__level--mob--title" >о компании</summary>
 									<ul class="company">
 										<li class="first__level--item--mob"><a href="#">информация</a></li>
 										<li class="first__level--item--mob">
 											<details class="two__level--mob">
-												<summary>карта присутствия</summary>
+												<summary class="two__level--mob--title" >карта присутствия</summary>
 												<ul class="map__list--mob">
 													<li class="two__level--item--mob"><a href="#">карта присутствия</a></li>
 													<li class="two__level--item--mob"><a href="#">карта присутствия</a></li>
@@ -55,7 +55,7 @@
 							<li class="nav__item--mob"><a class="navbar__link" href="#">акции</a></li>
 							<li class="nav__item--mob">
 								<details class="first__level--mob">
-									<summary>абонентам</summary>
+									<summary class="first__level--mob--title" >абонентам</summary>
 									<ul class="post">
 										<li class="first__level--item--mob"><a href="#">пункт_1</a></li>
 										<li class="first__level--item--mob"><a href="#">пункт_1</a></li>
@@ -65,20 +65,20 @@
 							</li>	
 							<li class="nav__item--mob"><a class="navbar__link" href="#">контакты</a></li>
 						</ul>
-
+					</nav>
 				</div>
 			</div>
 			<nav class="navbar__wrapp">
 				<ul class="navbar">	
 					<li class="nav__item nav__item--first">
 						<details class="first__level">
-							<summary>о компании</summary>
-							<ul class="company">
+							<summary class="first__level--title">о компании</summary>
+							<ul class="company first__level--list">
 								<li class="first__level--item"><a href="#">информация</a></li>
 								<li class="first__level--item">
 									<details class="two__level">
-										<summary>карта присутствия</summary>
-										<ul class="map__list">
+										<summary class="two__level--title">карта присутствия</summary>
+										<ul class="map__list two__level--list">
 											<li class="two__level--item"><a href="#">карта присутствия</a></li>
 											<li class="two__level--item"><a href="#">карта присутствия</a></li>
 											<li class="two__level--item"><a href="#">карта присутствия</a></li>
@@ -92,11 +92,11 @@
 						</details>
 					</li>		
 					<li class="nav__item"><a class="navbar__link" href="#">новости</a></li>
-					<li class="nav__item"><a class="navbar__link" href="#">акции</a></li>
+					<li class="nav__item nav__item--sale"><a class="navbar__link" href="#">акции</a></li>
 					<li class="nav__item">
 						<details class="first__level">
-							<summary>абонентам</summary>
-							<ul class="post">
+							<summary class="first__level--title">абонентам</summary>
+							<ul class="post first__level--list">
 								<li class="first__level--item"><a href="#">пункт_1</a></li>
 								<li class="first__level--item"><a href="#">пункт_1</a></li>
 								<li class="first__level--item"><a href="#">пункт_1</a></li>
@@ -111,12 +111,12 @@
 					<img src="images/dist/tel__icon.svg" alt="телефон">
 					<a class="tel__desc" href="tel:+8-800-550-99-66">8-800-550-99-66</a>
 				</div>
-				<a class="contact__link" href="#" class="support">
-					<img src="images/dist/support__icon.svg" alt="support">
+				<a class="contact__link support__desc--link" href="#" class="support">
+					<img class="support__desc--img" src="images/dist/support__icon.svg" alt="support">
 					<div class="support__desc">тех. поддержка: <span>*6119</span></div>
 				</a>
 				<a class="contact__link contact__link--regist" href="#" class="regist">
-					<img src="images/dist/User.svg" alt="regist">
+					<img class="contact__link--regist--img" src="images/dist/User.svg" alt="regist">
 					<div class="regist__desc">личный кабинет</div>
 				</a>
 			</div>

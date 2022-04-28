@@ -32,12 +32,12 @@
 						<ul class="navbar--mob">	
 							<li class="nav__item--mob">
 								<details class="first__level--mob">
-									<summary>о компании</summary>
+									<summary class="first__level--mob--title" >о компании</summary>
 									<ul class="company">
 										<li class="first__level--item--mob"><a href="#">информация</a></li>
 										<li class="first__level--item--mob">
 											<details class="two__level--mob">
-												<summary>карта присутствия</summary>
+												<summary class="two__level--mob--title" >карта присутствия</summary>
 												<ul class="map__list--mob">
 													<li class="two__level--item--mob"><a href="#">карта присутствия</a></li>
 													<li class="two__level--item--mob"><a href="#">карта присутствия</a></li>
@@ -55,7 +55,7 @@
 							<li class="nav__item--mob"><a class="navbar__link" href="#">акции</a></li>
 							<li class="nav__item--mob">
 								<details class="first__level--mob">
-									<summary>абонентам</summary>
+									<summary class="first__level--mob--title" >абонентам</summary>
 									<ul class="post">
 										<li class="first__level--item--mob"><a href="#">пункт_1</a></li>
 										<li class="first__level--item--mob"><a href="#">пункт_1</a></li>
@@ -65,20 +65,20 @@
 							</li>	
 							<li class="nav__item--mob"><a class="navbar__link" href="#">контакты</a></li>
 						</ul>
-
+					</nav>
 				</div>
 			</div>
 			<nav class="navbar__wrapp">
 				<ul class="navbar">	
 					<li class="nav__item nav__item--first">
 						<details class="first__level">
-							<summary>о компании</summary>
-							<ul class="company">
+							<summary class="first__level--title">о компании</summary>
+							<ul class="company first__level--list">
 								<li class="first__level--item"><a href="#">информация</a></li>
 								<li class="first__level--item">
 									<details class="two__level">
-										<summary>карта присутствия</summary>
-										<ul class="map__list">
+										<summary class="two__level--title">карта присутствия</summary>
+										<ul class="map__list two__level--list">
 											<li class="two__level--item"><a href="#">карта присутствия</a></li>
 											<li class="two__level--item"><a href="#">карта присутствия</a></li>
 											<li class="two__level--item"><a href="#">карта присутствия</a></li>
@@ -92,11 +92,11 @@
 						</details>
 					</li>		
 					<li class="nav__item"><a class="navbar__link" href="#">новости</a></li>
-					<li class="nav__item"><a class="navbar__link" href="#">акции</a></li>
+					<li class="nav__item nav__item--sale"><a class="navbar__link" href="#">акции</a></li>
 					<li class="nav__item">
 						<details class="first__level">
-							<summary>абонентам</summary>
-							<ul class="post">
+							<summary class="first__level--title">абонентам</summary>
+							<ul class="post first__level--list">
 								<li class="first__level--item"><a href="#">пункт_1</a></li>
 								<li class="first__level--item"><a href="#">пункт_1</a></li>
 								<li class="first__level--item"><a href="#">пункт_1</a></li>
@@ -111,12 +111,12 @@
 					<img src="images/dist/tel__icon.svg" alt="телефон">
 					<a class="tel__desc" href="tel:+8-800-550-99-66">8-800-550-99-66</a>
 				</div>
-				<a class="contact__link" href="#" class="support">
-					<img src="images/dist/support__icon.svg" alt="support">
+				<a class="contact__link support__desc--link" href="#" class="support">
+					<img class="support__desc--img" src="images/dist/support__icon.svg" alt="support">
 					<div class="support__desc">тех. поддержка: <span>*6119</span></div>
 				</a>
 				<a class="contact__link contact__link--regist" href="#" class="regist">
-					<img src="images/dist/User.svg" alt="regist">
+					<img class="contact__link--regist--img" src="images/dist/User.svg" alt="regist">
 					<div class="regist__desc">личный кабинет</div>
 				</a>
 			</div>
@@ -147,14 +147,14 @@
 	<div class="container">
 		<div class="internet__bg top__bg">
 			<div class="internet__bg--desc">
-				<div class="internet__bg--title top__title">Интернет + ТВ</div>
-				<div class="internet__bg--text top__text">Системы наружного, внутреннего, скрытого видеонаблюдения. Системы контроля доступа, домофоны, пожарные и охранные сигнализации.</div>
+				<h1 class="internet__bg--title top__title">Интернет + ТВ</h1>
+				<h2 class="internet__bg--text top__text">Системы наружного, внутреннего, скрытого видеонаблюдения. Системы контроля доступа, домофоны, пожарные и охранные сигнализации.</h2>
 				<div class="button internet__bg--button top__button">Подключить</div>
 			</div>
 		</div>
 		<div class="internet__tariff">
-			<div class="internet__tariff--title">Чтобы мы смогли предложить актуальные тарифы,
-				выберите ваш район и населенный пункт</div>
+			<h2 class="internet__tariff--title">Чтобы мы смогли предложить актуальные тарифы,
+				выберите ваш район и населенный пункт</h2>
 			<div class="internet__tariff--select">
 				<div class="tariff--selects">
 					<details class="tariff--select tariff--select--city">
@@ -179,18 +179,18 @@
 					</details>
 				</div>
 			</div>
-			<div class="button internet__tariff--button">Указать местоположение на карте</div>
+			<div class="button internet__tariff--button"><img src="images/dist/internet__tariff--button--img.svg" alt="icon">Указать местоположение на карте</div>
 		</div>
-		<div class="internet__map">
+		<div class="internet__map hidden animate__animated">
 			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A61b8897434dbfc7062c77579b84fd5a9e95fae5288898a04ff862a3b91d4a467&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
-			<button class="button internet__map__button">Свернуть<img src="images/dist/internet__map__button.svg" alt="icon"></button>
+			<button class="button internet__map__button">Свернуть<div class="internet__map__button--img"></div></button>
 		</div>
 	</div>
 	<div class="internet__cards">
 			
-<div class="popup__overlay hidden">
-	<div class="popup__content">
-		<div class="close"><img src="images/dist/close__popUp.svg"></div>
+<div class="popup__bg">
+	<div class="popup__content popup">
+		<div class="close-popup"><img src="images/dist/close__popUp.svg"></div>
 		<div class="popup__content--title">Тариф "Все за 900"</div>
 		<div class="popup__content--icons">
 			<div class="popup__content--icon">
@@ -233,22 +233,37 @@
 				<br>
 				Информация на данном сайте является публичной офертой. Отправляя заявку на подключение через форму обратной связи на сайте или через оператора контакт-центра, вы соглашаетесь с публичной офертой.</div>
 		</div>
-		<div class="popup__content--footer"></div> 
-		<div class="section__cotact_form">
-	<form class="section__cotact_form" action="#" method="post" name="contact">
-		<label class="contact_form-label">
-			<input class="contact_form-input" type="text"  name="name"  placeholder="Введите ваше имя">
-			<input class="contact_form-input" name="phone" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите ваш телефон">
-		</label>
-		<button type="submit" class="button application__button">подключить</button>
-	</form>
-</div>
+		<div class="section__popup_form">
+			<form class="popup_form" action="#" method="post" name="contact">
+				<label class="popup_form-label">
+					<input class="popup_form-input" type="text"  name="name"  placeholder="Введите ваше имя">
+					<input class="popup_form-input" name="phone" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите ваш телефон">
+				</label>
+				<button type="submit" class="button popup_form__button">Подключить</button>
+			</form>
+		</div>
+		<div class="popup__content--footer">Отправляя свои данные, я принимаю <a href="#">Пользовательское соглашение.</a></div> 
 	</div>
-
+</div>
+<div class="popup__bg popup__bg__two">
+	<div class="popup__content popupTwo">
+		<div class="close-popup__two"><img src="images/dist/close__popUp__two.svg "></div>
+		<div class="popup__content--title"><img src="images/dist/popup__content--title-imgTwo.svg" alt="icon"><span>Тариф "Все за 900"</span></div>
+		<div class="section__popup_form">
+			<form class="popup_form" action="#" method="post" name="contact">
+				<label class="popup_form-label">
+					<input class="popup_form-input" type="text"  name="name"  placeholder="Введите ваше имя">
+					<input class="popup_form-input" name="phone" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите ваш телефон">
+				</label>
+				<button type="submit" class="button popup_form__button">Подключить</button>
+			</form>
+		</div>
+		<div class="popup__content--footer">Отправляя свои данные, я принимаю <a href="#">Пользовательское соглашение.</a></div> 
+	</div>
 </div>
 		 <div class="container">
 			<div class="internet__cards--decs">Тарифные планы для СТ Тверское городской округ Ступино</div>
-			<div class="internet__cards--title">Скоростные безлимитные тарифы</div>
+			<h2 class="internet__cards--title">Скоростные безлимитные тарифы</h2>
 			<div class="internet__cards--wrap">
 				<div class="internet__card">
 					<img class="internet__card--img" src="images/dist/internet__card--img.svg" alt="icon">
@@ -262,13 +277,13 @@
 					</div>
 					<div class="internet__card--cost">
 						<div class="card__cost">
-							<img src="images/dist/card__speed--img.svg" alt="icon" class="card__cost--img">
+							<img src="images/dist/card__cost--img.svg" alt="icon" class="card__cost--img">
 							<div class="card__cost--desc">Стоимость</div>
 						</div>
 						<div class="card__cost--title">500 руб./мес.</div>
 					</div>
-					<div class="button internet__card__button--tariff">Подробнее о тарифе</div>
-					<div class="button internet__card__button--connect">Подключить</div>
+					<div class="button internet__card__button--tariff open-popup">Подробнее о тарифе</div>
+					<div class="button internet__card__button--connect open-popup__two">Подключить</div>
 				</div>
 				<div class="internet__card">
 					<img class="internet__card--img" src="images/dist/internet__card--img__2.svg" alt="icon">
@@ -282,13 +297,13 @@
 					</div>
 					<div class="internet__card--cost">
 						<div class="card__cost">
-							<img src="images/dist/card__speed--img.svg" alt="icon" class="card__cost--img">
+							<img src="images/dist/card__cost--img.svg" alt="icon" class="card__cost--img">
 							<div class="card__cost--desc">Стоимость</div>
 						</div>
 						<div class="card__cost--title">700 руб./мес.</div>
 					</div>
-					<div class="button internet__card__button--tariff">Подробнее о тарифе</div>
-					<div class="button internet__card__button--connect">Подключить</div>
+					<div class="button internet__card__button--tariff open-popup">Подробнее о тарифе</div>
+					<div class="button internet__card__button--connect open-popup__two">Подключить</div>
 				</div>
 				<div class="internet__card">
 					<img class="internet__card--img" src="images/dist/internet__card--img__3.svg" alt="icon">
@@ -302,13 +317,13 @@
 					</div>
 					<div class="internet__card--cost">
 						<div class="card__cost">
-							<img src="images/dist/card__speed--img.svg" alt="icon" class="card__cost--img">
+							<img src="images/dist/card__cost--img.svg" alt="icon" class="card__cost--img">
 							<div class="card__cost--desc">Стоимость</div>
 						</div>
 						<div class="card__cost--title">1400 руб./мес.</div>
 					</div>
-					<div class="button internet__card__button--tariff">Подробнее о тарифе</div>
-					<div class="button internet__card__button--connect">Подключить</div>
+					<div class="button internet__card__button--tariff open-popup">Подробнее о тарифе</div>
+					<div class="button internet__card__button--connect open-popup__two">Подключить</div>
 				</div>
 			</div>
 		 </div>
@@ -316,44 +331,8 @@
 	</div>
 
 	<div class="container">
-		<div class="internet__sale">
-			<div class="application__items internet__sale--items">
-				<div class="application__item internet__sale--item">
-					<img class="application__item--img" src="images/dist/internet__sale--item__1.webp" alt="Интерактивное ТВ">
-					<div class="application__item--desc internet__sale--desc">
-						<div class="application__item__desc--wrap">
-							<div class="application__item--title">WI-FI роутер</div>
-							<div class="application__item--text">Если у Вас несколько компьютеров и Вы постоянно испытываете неудобства, поочередно используя Интернет, то это решение для Вас.</div>
-							<a href="video.html" class="application__item__button  button">Подробнее</a>
-						</div>
-					</div>
-				</div>
-				<div class="application__item internet__sale--item">
-					<img class="application__item--img" src="images/dist/internet__sale--item__2.webp" alt="Интерактивное ТВ">
-					<div class="application__item--desc internet__sale--desc">
-						<div class="application__item__desc--wrap">
-							<div class="application__item--title">SMS</div>
-							<div class="application__item--text">Чтобы уберечь Вас от незапланированных и зачастую ощутимых трат на приобретение нового оборудования, мы вводим услугу «Расширенная гарантия».</div>
-							<a href="tv.html" class="application__item__button button">Подробнее</a>
-	
-						</div>
-	
-					</div>
-				</div>
-				<div class="application__item internet__sale--item">
-					<img class="application__item--img" src="images/dist/internet__sale--item__3.webp" alt="Интернет + ТВ">
-					<div class="application__item--desc internet__sale--desc">
-						<div class="application__item__desc--wrap ">
-							<div class="application__item--title">ТВ бесплатно 185 каналов</div>
-							<div class="application__item--text">Телевидение высокой четкости от 150 руб. Более 170 каналов. Наслаждайтесь любимыми фильмами и сериалами на любом из ваших устройств.</div>
-							<a href="internet.html" class="application__item__button button">Подробнее</a> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="internet__city__sale">
-			<div class="internet__city__sale--title">Акции для города Ступино</div>
+			<h2 class="internet__city__sale--title">Акции для города Ступино</h2>
 			<div class="city__sale__items">
 				<div class="city__sale__item">
 					<img src="images/dist/news-item.jpg" class="city__sale__item--img" alt="icon">
@@ -374,6 +353,42 @@
 					<img src="images/dist/news-item.jpg" class="city__sale__item--img" alt="icon">
 					<div class="city__sale__item--date"><img src="images/dist/city__sale__item--icon.svg" alt="icon" >24.07.2021</div>
 					<div class="city__sale__item--desc">Подключи современное телевидение и получи роутер приставку бесплатно </div>
+				</div>
+			</div>
+		</div>
+		<div class="internet__sale">
+			<div class="application__items internet__sale--items">
+				<div class="application__item internet__sale--item">
+					<img class="application__item--img" src="images/dist/internet__sale--item__1.webp" alt="Интерактивное ТВ">
+					<div class="application__item--desc internet__sale--desc">
+						<div class="application__item__desc--wrap">
+							<div class="application__item--title">WI-FI роутер</div>
+							<div class="application__item--text">Если у Вас несколько компьютеров и Вы постоянно испытываете неудобства, поочередно используя Интернет, то это решение для Вас.</div>
+							<a href="video.html" class="application__item__button  button">Подробнее об услуге</a>
+						</div>
+					</div>
+				</div>
+				<div class="application__item internet__sale--item">
+					<img class="application__item--img" src="images/dist/internet__sale--item__2.webp" alt="Интерактивное ТВ">
+					<div class="application__item--desc internet__sale--desc">
+						<div class="application__item__desc--wrap">
+							<div class="application__item--title">SMS</div>
+							<div class="application__item--text">Чтобы уберечь Вас от незапланированных и зачастую ощутимых трат на приобретение нового оборудования, мы вводим услугу «Расширенная гарантия».</div>
+							<a href="tv.html" class="application__item__button button">Подробнее об услуге</a>
+	
+						</div>
+	
+					</div>
+				</div>
+				<div class="application__item internet__sale--item">
+					<img class="application__item--img" src="images/dist/internet__sale--item__3.webp" alt="Интернет + ТВ">
+					<div class="application__item--desc internet__sale--desc">
+						<div class="application__item__desc--wrap ">
+							<div class="application__item--title">ТВ бесплатно 185 каналов</div>
+							<div class="application__item--text">Телевидение высокой четкости от 150 руб. Более 170 каналов. Наслаждайтесь любимыми фильмами и сериалами на любом из ваших устройств.</div>
+							<a href="internet.html" class="application__item__button button">Подробнее об услуге</a> 
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
