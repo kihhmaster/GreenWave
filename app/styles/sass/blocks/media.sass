@@ -1,5 +1,7 @@
 //`@media (max-width: 1400px) { ...}
 @include media-breakpoint-down(xxl)
+	.internet__card
+		max-width: 380px
 	.application__item--title
 		font-size: 20px
 	.application__item--desc
@@ -72,6 +74,11 @@
 		top: 100px
 //`@media (max-width:  1200px) { ...}
 @include media-breakpoint-down(xl)
+	.internet__cards--decs, .internet__cards--title
+		text-align: center
+		width: 100%
+	.internet__cards--wrap
+		justify-content: center
 	.tv__bg.top__bg
 		margin-bottom: 20px
 	.tv__affers__smart--text
