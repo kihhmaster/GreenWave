@@ -34,6 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
 			type: 'bullets',
 		},		
 	})
+	const videoSlider = new Swiper('.video__slider', {
+		speed: 800,
+		// autoHeight: true,
+		loop: false,
+		autoplay: {
+			delay: 3000,
+		},
+		// slidesPerView: 3,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},		
+	})
 	let internetTariffButton = document.querySelector('.internet__tariff--button')
 	let internetMap = document.querySelector('.internet__map')
 	let interneMapButton = document.querySelector('.internet__map__button')

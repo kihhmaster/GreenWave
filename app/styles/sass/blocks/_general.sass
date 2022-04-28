@@ -662,16 +662,7 @@ details
 	height: auto
 	min-height: 247px
 	padding: 24px
-.tv_item--desc
-	position: absolute
-	bottom: 15px
-	left: 15px
-	background: rgba(29, 29, 29, 0.85)
-	backdrop-filter: blur(12px)
-	border-radius: 26px
-	width: 90%
-	height: 168px
-	padding: 24px
+
 .application__item__desc--wrap
 	display: flex
 	position: relative
@@ -684,10 +675,34 @@ details
 	display: flex
 	position: relative
 	width: 100%
-	height: auto
+	height: 100%
 	justify-content: flex-start
 	align-items: flex-start
 	flex-flow: column nowrap
+.video__item--button
+	position: absolute
+	bottom: 0
+	height: 59px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+.video__item--title
+	font-weight: 400
+	font-size: 24px
+	line-height: 26px
+	color: #FFFFFF
+.video__item
+	.tv_item--desc
+		position: absolute
+		bottom: 15px
+		left: 10px
+		background: rgba(29, 29, 29, 0.85)
+		backdrop-filter: blur(12px)
+		border-radius: 26px
+		width: 95%
+		height: 168px
+		padding: 24px
 .media-footer--link
 	&:hover
 		filter: blur(1px)
@@ -698,14 +713,7 @@ details
 	display: flex
 	align-items: center
 	justify-content: center
-.tv__item--button
-	position: absolute
-	bottom: 0
-	height: 59px
-	width: 100%
-	display: flex
-	align-items: center
-	justify-content: center
+
 .footer__media, .footer__contacts, .footer__navigation, .green-wave-footer
 	width: 240px
 .application__item--title
@@ -776,6 +784,18 @@ details
 	background-position: top right
 	background-image: url(#{$assetImages}/video__bg.webp)
 	margin-bottom: $gutter*2
+.video__offer
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: center
+	width: 100%
+.video__offer--items
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: center
+	width: 100%
 .top__bg
 	height: 532px
 .top__text
@@ -1101,3 +1121,47 @@ details
 	line-height: 26px
 	color: #1D1D1D
 	margin-bottom: 40px
+
+.video__description
+	position: relative
+	width: 100%
+	justify-content: flex-start
+	align-items: center
+	margin-top: $gutter*2
+	margin-bottom: $gutter*2 
+.video__description--title
+	font-weight: 500
+	font-size: 24px
+	line-height: 35px
+	color: #1D1D1D
+	margin-bottom: 16px
+.video__description-texst
+	font-style: normal
+	font-weight: 400
+	font-size: 19px
+	line-height: 35px
+	color: #1D1D1D
+.video__about
+	.about__title.title
+		text-align: center
+.video__slider__wrap
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+.video__slider
+	.swiper-pagination
+		align-self: center
+	.swiper-wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+.video__slider--item
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+		img
+			margin: 20px
