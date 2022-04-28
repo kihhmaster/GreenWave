@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		speed: 800,
 		// autoHeight: true,
 		loop: false,
-		autoplay: {
-			delay: 3000,
-		},
-		// slidesPerView: 3,
+		// autoplay: {
+		// 	delay: 3000,
+		// },
+		slidesPerView: 6,
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',

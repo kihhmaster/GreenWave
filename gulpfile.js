@@ -63,15 +63,15 @@ function scripts() {
 					}
 				]
 			},
-			optimization: {
-				minimize: true,
-				minimizer: [
-					new TerserPlugin({
-						terserOptions: { format: { comments: false } },
-						extractComments: false
-					})
-				]
-			},
+			// optimization: {
+			// 	minimize: true,
+			// 	minimizer: [
+			// 		new TerserPlugin({
+			// 			terserOptions: { format: { comments: false } },
+			// 			extractComments: false
+			// 		})
+			// 	]
+			// },
 		}, webpack)).on('error', (err) => {
 			this.emit('end')
 		})

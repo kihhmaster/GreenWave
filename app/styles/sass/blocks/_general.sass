@@ -1150,9 +1150,14 @@ details
 	justify-content: center
 	align-items: center
 	width: 100%
+	height: auto
 .video__slider
-	.swiper-pagination
-		align-self: center
+	display: flex
+	width: 100%
+	position: relative
+	justify-content: center
+	align-items: center
+	flex-flow: column nowrap
 	.swiper-wrapper
 		display: flex
 		justify-content: center
@@ -1163,5 +1168,57 @@ details
 	justify-content: center
 	align-items: center
 	width: 100%
-		img
-			margin: 20px
+	margin: 30px
+	img
+		width: 100%
+.video__slider
+	.swiper__control
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		width: 100%
+		max-width: 300px
+		align-self: center
+		.swiper-pagination
+			display: flex
+			align-items: center
+			justify-content: center
+			align-self: center
+			position: relative
+			z-index: 10
+			width: 70%
+			.swiper-pagination-bullet
+				border: 2px solid #C4C4C4
+				height: 15px
+				width: 15px
+		.swiper-button-prev, .swiper-button-next
+			color: #000
+			opacity: 0.7
+			height: 20px
+			width: 20px
+			position: absolute
+			top: 0
+			z-index: 100
+			&:hover
+				opacity: 1
+				transition: opacity 0.3s ease-in
+				&::after
+					color: $accent
+					opacity: 1
+					transition: opacity 0.3s ease-in
+			&::after
+				color:#000
+				font-size: 24px
+				font-weight: 700
+		// .swiper-button-prev
+		// 	margin-right: 150px
+.video__about
+	.item-about__title
+		font-weight: 500
+		font-size: 24px
+		line-height: 26px
+		color: #1D1D1D
+.video__about
+	.about__title.title
+		margin-bottom: 56px
