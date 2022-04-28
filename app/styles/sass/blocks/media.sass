@@ -46,7 +46,7 @@
 			width: 20px
 			height: 20px
 	.menu__logo
-		width: 100px
+		width: 200px
 	.menu__link
 		font-size: 16px
 	.logo
@@ -66,11 +66,24 @@
 		line-height: 1.2
 	.internet__card--img
 		width: 100px
-	// .video__bg.top__bg
-	// 	height: 532px
+	.tv__affers__smart
+		margin-right: 30px
+	.tv__affers__smart--text
+		top: 100px
 //`@media (max-width:  1200px) { ...}
 @include media-breakpoint-down(xl)
-
+	.tv__bg.top__bg
+		margin-bottom: 20px
+	.tv__affers__smart--text
+		top: 80px
+	.tv__affers__smart--text
+		font-size: 34px
+	.title
+		line-height: 1.2
+	.about.video__about
+		display: flex
+		justify-content: center
+		align-items: center
 	.news__items
 		justify-content: center
 		align-items: center
@@ -172,6 +185,17 @@
 			margin-bottom: 40px
 //`@media (max-width: 992px) { ...}
 @include media-breakpoint-down(lg)
+
+	.tv__bg.top__bg
+		margin-bottom: 0px
+	.tv__affers__smart--text
+		top: 50px
+	.tv__affers__smart--text
+		font-size: 28px
+	.menu__logo
+		width: 150px
+	.about.video__about
+		margin-bottom: $gutter*2
 	.video__bg
 		margin-bottom: 0px
 	.video__offer--items
@@ -321,8 +345,43 @@
 			font-size: 30px
 			line-height: 1.1
 			margin-bottom: 40px
+	.section__video__slider__title
+		line-height: 1.2
+
 //`@media (max-width: 768px) { ...}
 @include media-breakpoint-down(md)
+	.tv__seoText--desc
+		font-size: 14px
+		line-height: 1.1
+		text-align: center
+		display: bloc
+	.tv__seoText-title
+		margin-bottom: $gutter/2
+		text-align: center
+	.tv__seoText
+		margin-top: $gutter
+		padding: 0 10px
+	.tv__affers
+		margin-top: $gutter
+		margin-bottom: $gutter
+		padding: 0 10px
+
+	.tv__affers
+		flex-flow: column nowrap
+	.tv__affers__smart--text
+		top: 50px
+	.tv__affers__smart--text
+		font-size: 28px
+	.tv__affers__smart--text
+		font-size: 30px
+	.tv__affers__smart
+		margin-right: 0
+		margin-bottom: $gutter
+	.about.video__about
+		margin-bottom: $gutter
+	.section__video__slider__title
+		line-height: 1.2
+		font-size: 24px
 	.about__items
 		gap: 40px
 	.video__bg
@@ -469,9 +528,17 @@
 			line-height: 1.1
 	.about.video__about
 		padding-bottom: 0
-
+	.section__video__slider__title
+		line-height: 1.1
+		font-size: 20px
 //`@media (max-width: 576px) { ...}
 @include media-breakpoint-down(sm)
+	.tv__bg.top__bg
+		height: 180px
+	.tv__affers
+		margin-top: 10
+		margin-bottom: $gutter
+		padding: 0 10px
 	.about__items
 		gap: 10px
 	.video__about
@@ -621,3 +688,7 @@
 		max-width: 350px
 	.video__bg--title
 		margin-bottom: 5px
+	.video__slider__wrap
+		margin-bottom: $gutter
+	.video__slider .swiper__control .swiper-button-next:after, .video__slider .swiper__control .swiper-button-prev
+		display: none
