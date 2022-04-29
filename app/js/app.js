@@ -1,8 +1,8 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 // import '~/node_modules/mmenu-light/dist/mmenu-light.js'
-import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode} from 'swiper'
-Swiper.use([ Parallax, Mousewheel,  Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode])
+import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode } from 'swiper'
+Swiper.use([ Parallax, Mousewheel,  Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode] )
 document.addEventListener('DOMContentLoaded', () => {
 	let cross = document.querySelector('.cross'),
 	    overlay = document.querySelector('.overlay'),
@@ -45,7 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
 		autoplay: {
 			enabled: true,
 			delay: 0
-		}			
+		},
+		breakpoints: {
+			'1200': {
+				slidesPerView: 5,
+				spaceBetween: 40,
+			},
+			'992': {
+				slidesPerView: 4,
+				spaceBetween: 50,
+			},
+			'576': {
+				slidesPerView: 3,
+				spaceBetween: 50,
+			},
+			'400': {
+				slidesPerView: 2,
+				spaceBetween: 50,
+			},
+		}		
 	})
 	const tvSlider2 = new Swiper('.tv__slider--2', {
 		slidesPerView: 6,
@@ -57,7 +75,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		autoplay: {
 			delay: 0,
 			reverseDirection: true,
-		},	
+		},
+		breakpoints: {
+			'1200': {
+				slidesPerView: 5,
+				spaceBetween: 40,
+			},
+			'992': {
+				slidesPerView: 4,
+				spaceBetween: 50,
+			},
+			'576': {
+				slidesPerView: 3,
+				spaceBetween: 50,
+			},
+			'400': {
+				slidesPerView: 2,
+				spaceBetween: 50,
+			},
+		}	
+			
 	})
 	const tvSlider3 = new Swiper('.tv__slider--3', {
 		slidesPerView: 6,
@@ -69,7 +106,25 @@ document.addEventListener('DOMContentLoaded', () => {
 		autoplay: {
 			delay: 0,
 			// reverseDirection: true,
-		},	
+		},
+		breakpoints: {
+			'1200': {
+				slidesPerView: 5,
+				spaceBetween: 40,
+			},
+			'992': {
+				slidesPerView: 4,
+				spaceBetween: 50,
+			},
+			'576': {
+				slidesPerView: 3,
+				spaceBetween: 50,
+			},
+			'400': {
+				slidesPerView: 2,
+				spaceBetween: 50,
+			},
+		}		
 	})
 	const videoSlider = new Swiper('.video__slider', {
 		slidesPerView: 5,

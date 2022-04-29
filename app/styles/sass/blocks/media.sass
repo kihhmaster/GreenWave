@@ -195,8 +195,17 @@
 		margin-bottom: 20px
 	.img__text,.cards__subtitle,.blok3__text
 		line-height: 1.3
+	.slider__title 
+		font-size: 32px
+		line-height: 1.2
 //`@media (max-width: 992px) { ...}
 @include media-breakpoint-down(lg)
+	.footer__body 
+		padding-top: 30px
+		gap: 10px
+	.slider__title 
+		font-size: 32px
+		line-height: 1.2
 	.card__link
 		display: flex
 		flex-flow: column nowrap
@@ -426,9 +435,22 @@
 	.section__video__slider__title
 		line-height: 1.2
 		font-size: 36px
-
+	.channels__lists
+		flex-flow: column nowrap
 //`@media (max-width: 768px) { ...}
 @include media-breakpoint-down(md)
+
+ 
+	.chennels__list__entertainment,.entertainment__items
+		width: 100%
+		justify-content: center
+		align-items: center
+	.channels__lists
+		justify-content: center
+		align-items: center
+	.chennels__list__column__1
+		.entertainment__items
+			flex-flow: column nowrap
 	.tv__seoText--desc
 		font-size: 14px
 		line-height: 1.1
@@ -610,8 +632,19 @@
 	.section__video__slider__title
 		line-height: 1.1
 		font-size: 20px
+	.channels__title
+		text-align: center
+		margin-bottom: 0
+	.button__channels
+		align-self: center
 //`@media (max-width: 576px) { ...}
 @include media-breakpoint-down(sm)
+	.entertainment__item
+		width: 100%
+		justify-content: center
+		align-items: center
+	.entertainment__item__title
+		display: none
 	.tv__bg.top__bg
 		height: 180px
 	.tv__affers
@@ -771,3 +804,4 @@
 		margin-bottom: $gutter
 	.video__slider .swiper__control .swiper-button-next:after, .video__slider .swiper__control .swiper-button-prev
 		display: none
+
