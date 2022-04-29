@@ -1,8 +1,8 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 // import '~/node_modules/mmenu-light/dist/mmenu-light.js'
-import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay} from 'swiper'
-Swiper.use([ Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay ])
+import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode} from 'swiper'
+Swiper.use([ Parallax, Mousewheel,  Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode])
 document.addEventListener('DOMContentLoaded', () => {
 	let cross = document.querySelector('.cross'),
 	    overlay = document.querySelector('.overlay'),
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		autoplay: {
 			delay: 3000,
 		},
+		freeMode: true,
 		slidesPerView: 1,
 		navigation: {
 			nextEl: '.swiper-button-next',
@@ -34,14 +35,48 @@ document.addEventListener('DOMContentLoaded', () => {
 			type: 'bullets',
 		},		
 	})
-	const videoSlider = new Swiper('.video__slider', {
-		speed: 800,
-		// autoHeight: true,
-		loop: false,
-		// autoplay: {
-		// 	delay: 3000,
-		// },
+	const tvSlider1 = new Swiper('.tv__slider--1', {
 		slidesPerView: 6,
+		spaceBetween: 80,
+		speed: 2500,
+		freeMode: true,
+		loop: true,
+		pagination: false,
+		autoplay: {
+			delay: 0
+		}			
+	})
+	const tvSlider2 = new Swiper('.tv__slider--2', {
+		slidesPerView: 6,
+		spaceBetween: 80,
+		speed: 2500,
+		freeMode: true,
+		loop: true,
+		pagination: false,
+		autoplay: {
+			delay: 0,
+			reverseDirection: true,
+		},	
+	})
+	const tvSlider3 = new Swiper('.tv__slider--3', {
+		slidesPerView: 6,
+		spaceBetween: 80,
+		speed: 2500,
+		freeMode: true,
+		loop: true,
+		pagination: false,
+		autoplay: {
+			delay: 0,
+			// reverseDirection: true,
+		},	
+	})
+	const videoSlider = new Swiper('.video__slider', {
+		slidesPerView: 5,
+		spaceBetween: 30,
+		speed: 500,
+		freeMode: true,
+		loop: true,
+		pagination: false,
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
