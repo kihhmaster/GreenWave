@@ -439,8 +439,17 @@
 		flex-flow: column nowrap
 //`@media (max-width: 768px) { ...}
 @include media-breakpoint-down(md)
+	.question__item[open]
+		.question__item--title
+			margin-bottom: 10px
 
- 
+	.question__item--title
+		padding: 20px 30px
+		font-size: 24px
+	.question__item--desc
+		font-size: 16px
+		line-height: 1.2
+		margin-left: 0
 	.chennels__list__entertainment,.entertainment__items
 		width: 100%
 		justify-content: center
@@ -804,4 +813,15 @@
 		margin-bottom: $gutter
 	.video__slider .swiper__control .swiper-button-next:after, .video__slider .swiper__control .swiper-button-prev
 		display: none
-
+	.section__question
+		padding-left: 10px
+		padding-right: 10px
+	.question__title
+		text-align: center
+	.question__item--title
+		padding: 15px 60px 15px 15px
+		font-size: 16px
+		line-height: 1.2
+	.question__item--desc
+		padding: 15px
+		padding-top: 25px
