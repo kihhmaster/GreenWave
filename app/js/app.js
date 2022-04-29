@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		loop: true,
 		pagination: false,
 		autoplay: {
+			enabled: true,
 			delay: 0
 		}			
 	})
@@ -86,29 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			type: 'bullets',
 		},		
 	})
-	let internetTariffButton = document.querySelector('.internet__tariff--button')
-	let internetMap = document.querySelector('.internet__map')
-	let interneMapButton = document.querySelector('.internet__map__button')
-
-	internetTariffButton.addEventListener('click', ()=> {
-		internetMap.classList.remove('hidden')
-		internetMap.classList.remove('animate__fadeOut')
-		internetMap.classList.add('animate__fadeIn')
-		
-		
-	})
-	interneMapButton.addEventListener('click', ()=> {
-		internetMap.classList.remove('animate__fadeIn')
-		internetMap.classList.add('animate__fadeOut')
-		setTimeout(hiddenDely, 900);
-	})
-
-	function hiddenDely() {
-		internetMap.classList.add('hidden')
-	}
-	
-	
-
 	
 
 	///popUP--finifh
