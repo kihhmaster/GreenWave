@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		pagination: false,
 		centeredSlides: true,
 		slidesPerView: 'auto',
+		setWrapperSize: true,
 		autoplay: {
 			delay: 0,
 			// reverseDirection: true,
@@ -77,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		pagination: false,
 		centeredSlides: true,
 		slidesPerView: 'auto',
+		setWrapperSize: true,
 		autoplay: {
 			delay: 0,
 			reverseDirection: true,
@@ -86,16 +88,19 @@ document.addEventListener('DOMContentLoaded', () => {
 	const tvSlider3 = new Swiper('.tv__slider--3', {
 		slidesPerView: 6,
 		spaceBetween: 10,
-		speed: 1000,
+		speed: 2500,
 		freeMode: true,
 		loop: true,
 		pagination: false,
 		centeredSlides: true,
 		slidesPerView: 'auto',
+		setWrapperSize: true,
 		autoplay: {
 			delay: 0,
 			// reverseDirection: true,
+			disableOnInteraction: true,
 		},
+		freeModeMomentum: false,
 		
 	})
 	const videoSlider = new Swiper('.video__slider', {
