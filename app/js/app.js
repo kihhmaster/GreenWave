@@ -4,17 +4,7 @@
 import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode } from 'swiper'
 Swiper.use([ Parallax, Mousewheel,  Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode] )
 document.addEventListener('DOMContentLoaded', () => {
-	let cross = document.querySelector('.cross'),
-	    overlay = document.querySelector('.overlay'),
-			hamburger = document.querySelector('.hamburger--img')
 
-	hamburger.addEventListener('click', ()=>{
-	overlay.style.display = "flex"
-	});
-
-	cross.addEventListener('click', ()=>{
-	overlay.style.display = "none"
-	});
 	// Custom JS
 
 	const sliderTop = new Swiper('.slider__top', {
