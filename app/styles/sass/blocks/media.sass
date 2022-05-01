@@ -200,6 +200,8 @@
 		line-height: 1.2
 //`@media (max-width: 992px) { ...}
 @include media-breakpoint-down(lg)
+	.section__contacts
+		margin-bottom: 0
 	.contacts
 		flex-flow: column nowrap
 	.contacts__row
@@ -658,8 +660,7 @@
 		align-items: center
 	.entertainment__item__title
 		display: none
-	.tv__bg.top__bg
-		height: 180px
+
 	.tv__affers
 		margin-top: 10
 		margin-bottom: $gutter
@@ -853,6 +854,30 @@
 		text-align: center
 		display: flex
 		justify-content: center
-
+	.top__line
+		.container
+			padding: 0 0
+	.top__line__wrap
+		padding: 0 10px
+@media (max-width: 500px)
+	.top__bg
+		height: 180px
+@media (max-width: 400px)
+	.section__cotact--title
+		font-size: 24px
+	.section__cotact_form
+		margin-top: 20px
+	.menu__link
+		font-size: 10px
+	.support__desc
+		font-size: 10px
+	.support__desc--img
+		margin-right: 4px
+	.contact__link
+		max-width: 130px
+	.contact__link--regist--img
+		margin-right: 94px
+	.top__bg
+		height: 140px
 
 		
