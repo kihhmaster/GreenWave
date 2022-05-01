@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
+			clickable: true,
 		},		
 	})
 	const tvSlider1 = new Swiper('.tv__slider--1', {
@@ -85,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const tvSlider3 = new Swiper('.tv__slider--3', {
 		slidesPerView: 6,
 		spaceBetween: 10,
-		speed: 2500,
+		speed: 1000,
 		freeMode: true,
 		loop: true,
 		pagination: false,
@@ -98,12 +99,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		
 	})
 	const videoSlider = new Swiper('.video__slider', {
-		slidesPerView: 5,
 		spaceBetween: 30,
-		speed: 500,
+		speed: 600,
 		freeMode: true,
 		loop: true,
 		pagination: false,
+		initialSlide: 0,
+		setWrapperSize: true,
+		centeredSlides: true,
+		slidesPerView: 'auto',
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
@@ -111,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
+			clickable: true,
 		},		
 	})
 	
