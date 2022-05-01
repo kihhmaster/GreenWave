@@ -37,94 +37,65 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 	const tvSlider1 = new Swiper('.tv__slider--1', {
 		slidesPerView: 6,
-		spaceBetween: 80,
+		spaceBetween: 10,
 		speed: 2500,
 		freeMode: true,
 		loop: true,
 		pagination: false,
-		autoplay: {
-			enabled: true,
-			delay: 0
-		},
-		breakpoints: {
-			'1200': {
-				slidesPerView: 5,
-				spaceBetween: 40,
-			},
-			'992': {
-				slidesPerView: 4,
-				spaceBetween: 50,
-			},
-			'576': {
-				slidesPerView: 3,
-				spaceBetween: 50,
-			},
-			'400': {
-				slidesPerView: 1,
-				spaceBetween: 50,
-			},
-		}		
-	})
-	const tvSlider2 = new Swiper('.tv__slider--2', {
-		slidesPerView: 6,
-		spaceBetween: 80,
-		speed: 2500,
-		freeMode: true,
-		loop: true,
-		pagination: false,
-		autoplay: {
-			delay: 0,
-			reverseDirection: true,
-		},
-		breakpoints: {
-			'1200': {
-				slidesPerView: 5,
-				spaceBetween: 40,
-			},
-			'992': {
-				slidesPerView: 4,
-				spaceBetween: 50,
-			},
-			'576': {
-				slidesPerView: 3,
-				spaceBetween: 50,
-			},
-			'400': {
-				slidesPerView: 1,
-				spaceBetween: 50,
-			},
-		}	
-			
-	})
-	const tvSlider3 = new Swiper('.tv__slider--3', {
-		slidesPerView: 6,
-		spaceBetween: 80,
-		speed: 2500,
-		freeMode: true,
-		loop: true,
-		pagination: false,
+		centeredSlides: true,
+		slidesPerView: 'auto',
 		autoplay: {
 			delay: 0,
 			// reverseDirection: true,
 		},
-		breakpoints: {
-			'1200': {
-				slidesPerView: 5,
-				spaceBetween: 40,
-			},
-			'992': {
-				slidesPerView: 4,
-				spaceBetween: 50,
-			},
-			'576': {
-				slidesPerView: 3,
-				spaceBetween: 50,
-			},
-			'400': {
-				slidesPerView: 1,
-				spaceBetween: 50,
-			},
-		}		
+		// breakpoints: {
+		// 	'1200': {
+		// 		slidesPerView: 5,
+		// 		spaceBetween: 20,
+		// 	},
+		// 	'992': {
+		// 		slidesPerView: 4,
+		// 		spaceBetween: 20,
+		// 	},
+		// 	'576': {
+		// 		slidesPerView: 2,
+		// 		spaceBetween: 10,
+		// 	},
+		// 	'400': {
+		// 		slidesPerView: 1,
+		// 		spaceBetween: 10,
+		// 	},
+		// }			
+	})
+	const tvSlider2 = new Swiper('.tv__slider--2', {
+		slidesPerView: 6,
+		spaceBetween: 10,
+		speed: 2500,
+		freeMode: true,
+		loop: true,
+		pagination: false,
+		centeredSlides: true,
+		slidesPerView: 'auto',
+		autoplay: {
+			delay: 0,
+			reverseDirection: true,
+		},
+	
+	})
+	const tvSlider3 = new Swiper('.tv__slider--3', {
+		slidesPerView: 6,
+		spaceBetween: 10,
+		speed: 2500,
+		freeMode: true,
+		loop: true,
+		pagination: false,
+		centeredSlides: true,
+		slidesPerView: 'auto',
+		autoplay: {
+			delay: 0,
+			// reverseDirection: true,
+		},
+		
 	})
 	const videoSlider = new Swiper('.video__slider', {
 		slidesPerView: 5,
