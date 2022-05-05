@@ -204,6 +204,11 @@
 	.slider__title 
 		font-size: 32px
 		line-height: 1.2
+	.chennels__list__column__2
+		.chennels__list__entertainment__wrap
+			flex-flow: row nowrap
+			justify-content: space-between
+			align-items: flex-start
 //`@media (max-width: 992px) { ...}
 @include media-breakpoint-down(lg)
 	.internet__bg--desc
@@ -460,6 +465,9 @@
 		flex-flow: column nowrap
 //`@media (max-width: 768px) { ...}
 @include media-breakpoint-down(md)
+	.chennels__list__column__1 
+		.entertainment__items
+			flex-flow: row nowrap
 	.question__item[open]
 		.question__item--title
 			margin-bottom: 10px
@@ -478,9 +486,13 @@
 	.channels__lists
 		justify-content: center
 		align-items: center
-	.chennels__list__column__1
-		.entertainment__items
-			flex-flow: column nowrap
+	.entertainment__item
+		flex-flow: column nowrap
+	.entertainment__item__title
+		margin-top: 10px
+		margin-left: 0
+	.entertainment__item
+		height: auto
 	.tv__seoText--desc
 		font-size: 14px
 		line-height: 1.1
@@ -887,6 +899,8 @@
 	.top__bg
 		height: 180px
 @media (max-width: 400px)
+	.chennels__list__column__title
+		font-size: 20px
 	.section__cotact--title
 		font-size: 24px
 	.section__cotact_form
