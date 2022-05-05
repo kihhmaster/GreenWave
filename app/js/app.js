@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const sliderTop = new Swiper('.slider__top', {
 		speed: 800,
 		// autoHeight: true,
-		loop: false,
+		loop: true,
 		autoplay: {
 			delay: 3000,
 		},
@@ -39,25 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		autoplay: {
 			delay: 0,
 			// reverseDirection: true,
-		},
-		// breakpoints: {
-		// 	'1200': {
-		// 		slidesPerView: 5,
-		// 		spaceBetween: 20,
-		// 	},
-		// 	'992': {
-		// 		slidesPerView: 4,
-		// 		spaceBetween: 20,
-		// 	},
-		// 	'576': {
-		// 		slidesPerView: 2,
-		// 		spaceBetween: 10,
-		// 	},
-		// 	'400': {
-		// 		slidesPerView: 1,
-		// 		spaceBetween: 10,
-		// 	},
-		// }			
+		},		
 	})
 	const tvSlider2 = new Swiper('.tv__slider--2', {
 		slidesPerView: 6,
@@ -106,6 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
+		},
+		autoplay: {
+			delay: 3000,
 		},
 		pagination: {
 			el: '.swiper-pagination',

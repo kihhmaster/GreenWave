@@ -74,6 +74,12 @@
 		top: 100px
 //`@media (max-width:  1200px) { ...}
 @include media-breakpoint-down(xl)
+	.popup_form-input
+		height: 50px
+	.popup_form__button
+		height: 50px
+	.pagination
+		left: 50px
 	.internet__cards--decs, .internet__cards--title, .internet__city__sale--title
 		text-align: center
 		width: 100%
@@ -93,7 +99,7 @@
 		align-items: center
 	.news__items
 		justify-content: center
-		align-items: center
+		align-items: stretch
 	.news__title
 		text-align: center
 	.city__sale__items
@@ -200,6 +206,15 @@
 		line-height: 1.2
 //`@media (max-width: 992px) { ...}
 @include media-breakpoint-down(lg)
+	.internet__bg--desc
+		max-width: 400px
+	.tel
+		pointer-events: auto
+	.phone
+		pointer-events: auto
+	.pagination
+		left: 50px
+		bottom: 15px
 	.section__contacts
 		margin-bottom: 0
 	.contacts
@@ -502,7 +517,7 @@
 		gap: 40px
 	.video__bg
 		.internet__bg--desc
-			max-width: 600px
+			max-width: 400px
 	.menu__logo
 		display: none
 	.news__items
@@ -859,6 +874,15 @@
 			padding: 0 0
 	.top__line__wrap
 		padding: 0 10px
+	.internet__tariff--button	
+		font-size: 16px
+		line-height: 1.2
+		width: 100%
+	.internet__tariff
+		padding: 0
+	.tariff--select 
+		summary
+			padding: 0 10px
 @media (max-width: 500px)
 	.top__bg
 		height: 180px
@@ -879,5 +903,10 @@
 		margin-right: 94px
 	.top__bg
 		height: 140px
+	.internet__tariff--button
+		padding: 15px 15px
+		img
+			display: none
+
 
 		

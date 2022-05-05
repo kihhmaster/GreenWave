@@ -124,11 +124,15 @@ summary
 	font-weight: 400
 	font-size: 18px
 	line-height: 26px
+	padding: 17px 27px
 	/* identical to box height, or 144% */
 	text-align: center
 	color: #FFFFFF
 	img
 		margin-right: 9px
+.city__sale__item
+	&:hover
+		text-shadow: none
 details
 	position: relative
 	width: 100%
@@ -374,11 +378,17 @@ details
 	position: relative
 	flex: 3 1 auto
 .tel
+	pointer-events: none
+	user-select: all!important
 	flex: 1 1 auto
 	display: flex
 	justify-content: flex-end
 	align-items: center
 	position: relative
+.phone
+	pointer-events: none
+.tel__desc
+	user-select: all
 .menu__link
 	display: flex
 	justify-content: flex-end
@@ -525,6 +535,9 @@ details
 	align-items: center
 	width: 100%
 	max-width: 200px
+	position: absolute 
+	left: 75px
+	bottom: 40px
 .swiper--prev__next
 	display: flex
 	justify-content: center
@@ -593,7 +606,7 @@ details
 	margin-bottom: $gutterSection+30px
 .section__cotact_form
 	margin-top: 23px
-	margin-bottom: $gutter*2
+	margin-bottom: $gutter
 .section__cotact_form
 	width: 100%
 	position: relative
@@ -653,12 +666,12 @@ details
 	position: relative
 .application__item--desc
 	position: absolute
-	bottom: 15px
-	left: 15px
+	bottom: 10px
+	left: 10px
 	background: rgba(29, 29, 29, 0.85)
 	backdrop-filter: blur(12px)
 	border-radius: 26px
-	width: 90%
+	width: 95%
 	height: auto
 	min-height: 247px
 	padding: 24px
@@ -733,7 +746,7 @@ details
 	flex: 1 1 auto
 .application__item--text
 	width: 100%
-	font-weight: 400
+	font-weight: 300
 	font-size: 15px
 	line-height: 23px
 	color: #FFFFFF
@@ -808,7 +821,7 @@ details
 	margin-top: 130px
 	margin-left: 75px
 	width: 100%
-	max-width: 400px
+	max-width: 500px
 .video__bg--desc
 	max-width: 800px
 .video__bg--text
@@ -846,8 +859,9 @@ details
 	justify-content: center
 	align-items: center
 	margin: 0 15px 
-	border-radius: 20px
-	border: 1px solid rgba(29, 29, 29, 0.3)
+.tariff--select[open]
+	border-radius: 20px 20px 0 0
+	box-sizing: border-box
 .tariff--select
 	width: 100%
 	display: flex
@@ -856,6 +870,8 @@ details
 	font-weight: 400
 	font-size: 20px
 	line-height: 26px
+	border-radius: 20px
+	border: 1px solid rgba(29, 29, 29, 0.3)
 	height: auto
 	z-index: 40
 	summary
@@ -867,13 +883,17 @@ details
 		padding: 0 39px
 		transition: text-shadow .3s
 		&:hover
-			text-shadow: 0 0 .65px #333, 0 0 .65px #333	
+			text-shadow: 0 0 .45px #333, 0 0 .45px #333	
+		&::after
+			margin-top: 10px
+			content: url("#{$assetImages}/tariff--select.svg")
+
 	&[open]
 		summary
-			text-shadow: 0 0 .65px #333, 0 0 .65px #333
+			border-radius: 0px
+			text-shadow: 0 0 .45px #333, 0 0 .45px #333
 			&::after
-				text-shadow: 0 0 .65px #333, 0 0 .65px #333
-				content: url("#{$assetImages}/summary__open.svg")
+				text-shadow: 0 0 .45px #333, 0 0 .45px #333
 .tariff__list
 	width: 100%
 	display: flex
@@ -885,7 +905,7 @@ details
 	border: 1px solid rgba(29, 29, 29, 0.3)
 	background: #fff
 	position: absolute
-	top: 60px
+	top: 75px
 	left: 0
 .tariff__list--item
 	position: relative
@@ -1077,7 +1097,7 @@ details
 	display: flex
 	width: 100%
 	justify-content: flex-start
-	align-items: flex-start
+	align-items: stretch
 	position: relative
 	flex-flow: row wrap
 .internet__city__sale--title
@@ -1098,16 +1118,24 @@ details
 	background: #F4F4F4
 	border-radius: 25px
 	display: flex
+	overflow: hidden
 	flex-flow: column nowrap
 	justify-content: flex-start
 	align-items: flex-start
 	img
 		width: 100%
+		border-radius: 20px
 .city__sale__item--img
 	margin-bottom: 20px
 	border-radius: 20px
 	height: 221px
 	object-fit: cover
+	transition: all .3s ease-out
+	&:hover
+		transform: scale(1.1)
+.item-news
+	&:hover
+		text-shadow: none	
 .city__sale__item--date
 	display: flex
 	justify-content: flex-start
@@ -1135,7 +1163,7 @@ details
 	margin-bottom: $gutter*2 
 .video__description--title
 	font-weight: 500
-	font-size: 24px
+	font-size: 23px
 	line-height: 35px
 	color: #1D1D1D
 	margin-bottom: 16px
@@ -1262,7 +1290,9 @@ details
 	flex-flow: column nowrap
 .card__item
 	&:hover
-		text-shadow: 0 0 .2px #333, 0 0 .2px #333
+		box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1)
+		text-shadow: none
+
 .slider__title 
 	width: 100%
 	max-width: 1370px	
@@ -1414,7 +1444,11 @@ details
 	border-radius: 0px
 	align-self: flex-start
 	margin-left: 15px
+	padding: 0
 	margin-top: $gutter
+	&:hover
+		background: #fff 
+		color: #11A844
 .question__item
 	display: flex
 	position: relative
@@ -1424,17 +1458,21 @@ details
 	border-radius: 20px
 	margin-bottom: 23px
 	background: #F2F2F2
+	transition: all .3s
 .question__item[open]
 	border-radius: 20px
 	transition: background .3s ease
 	background: #f2f2f200
+	transition: all .3s
 	.question__item--title
 		margin-bottom: 20px
 		color: #fff
 		background: $accent
+		transition: all .3s
 		&::after
 			margin-left: 7px
 			content: url("#{$assetImages}/question__item__iconOpen.svg")
+			transition: all .3s
 .question__item--title
 	padding: 25px 40px 
 	border-radius: 20px
@@ -1442,6 +1480,7 @@ details
 	font-size: 28px
 	line-height: 34px
 	color: #1D1D1D
+	transition: all .3s
 	&::after
 		position: absolute
 		right: 20px
@@ -1454,6 +1493,7 @@ details
 		&::after
 			margin-left: 7px
 			content: url("#{$assetImages}/question__item__iconHover.svg")
+			transition: all .3s
 
 .question__title 
 	margin-bottom: $gutter
@@ -1473,7 +1513,7 @@ details
 	border-radius: 20px
 	padding: 30px 48px
 	margin-right: 50px
-
+	transition: all .2s
 .contacts
 	position: relative
 	width: 100%
