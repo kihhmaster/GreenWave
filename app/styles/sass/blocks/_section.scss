@@ -97,6 +97,11 @@ body {
 		}
 	
 }
+.details3 {
+  transition: height 1s ease;
+}
+.details3:not([open]) { height: 1.25em; }
+.details3[open] { height: 3.75em; }
 .item-news {
 	display: flex;
 	flex-direction: column;

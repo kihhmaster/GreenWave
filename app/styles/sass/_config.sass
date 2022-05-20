@@ -23,7 +23,7 @@ $assetImages: "../images/dist"
 @import 'node_modules/swiper/swiper-bundle'
 @import 'node_modules/animate.css/animate'
 
-// @import 'node_modules/animate.css/animate'
+@import 'node_modules/animate.css/animate'
 // FONTS LOAD SECTION
 	
 
@@ -33,6 +33,16 @@ $assetImages: "../images/dist"
 		font-style: $fstyle
 		font-weight: $fweight
 		src: url($furl) format('woff2')
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content
+
 /*
 // font-weight helper
 // 100 - Thin (Hairline)

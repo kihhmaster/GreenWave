@@ -465,6 +465,8 @@
 		flex-flow: column nowrap
 //`@media (max-width: 768px) { ...}
 @include media-breakpoint-down(md)
+	.disabled 
+		pointer-events: auto
 	.chennels__list__column__1 
 		.entertainment__items
 			flex-flow: row nowrap
@@ -895,10 +897,67 @@
 	.tariff--select 
 		summary
 			padding: 0 10px
+	.universityLive__img
+		background-position: center center
+	.city__sale__item
+		margin-right: 0
+		max-width: 380px
+	.about__item
+		margin-bottom: 35px
+	.item-about__image
+		margin-bottom: 15px
+	.item-about__title
+		margin-bottom: 5px
+	.page__about
+		padding-bottom: 35px
+	.item-news__button
+		height: 50px
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 18px
+	.application__item__button
+		height: 50px
+	.application__button
+		padding: 0
+	.contact__item--desc
+		font-size: 18px
+	.contact__item--desc
+		margin-bottom: 10px
+	.contacts__row
+		margin-bottom: 0px
+	.contact__item__buttons
+		margin-top: 10px
+	.contacts
+		padding-bottom: 20px
+	.contacts__title 
+		text-align: center
+		width: 100%
+	.card__item
+		max-width: 320px
+	.blok3__text
+		margin-right: 0
+		margin-left: 0
 @media (max-width: 500px)
+	.title__blok
+		line-height: 1.2
 	.top__bg
 		height: 180px
+	.contact__item--desc
+		flex-flow: column nowrap
+		img
+			height: 40px
+			width: 40px
+			margin-right: 0px
+		font-size: 18px
 @media (max-width: 400px)
+
+	.item-news__title
+		line-height: 1.2
+	.item-news__text
+		line-height: 1.2
+	.item-about__text
+		line-height: 1.2
 	.chennels__list__column__title
 		font-size: 20px
 	.section__cotact--title
@@ -921,6 +980,63 @@
 		padding: 15px 15px
 		img
 			display: none
+	.internet__tariff--title
+		font-size: 18px
+		margin-top: 15px
+		margin-bottom: 20px
+	.container
+		padding-left: 10px
+		padding-right: 10px
+	.tariff--select summary
+		font-size: 16px
+		height: 50px
+	.tariff__list
+		font-size: 16px
+		top: 50px
+		left: -1px
+	.tariff--selects
+		margin-bottom: 15px
+		height: auto
+	.internet__tariff
+		margin-bottom: 35px
+	.internet__cards
+		padding-top: 35px
+	.internet__cards--wrap
+		padding: 0
+	.internet__card__button--tariff,.internet__card__button--connect
+		font-size: 16px
+		padding: 15px
+	.internet__card--title
+		font-size: 24px
+		margin-bottom: 15px
+	.internet__cards
+		padding-bottom: 35px
+		margin-bottom: 35px
+	.internet__city__sale--title
+		font-size: 28px
+		line-height: 1.2
+	.video__offer
+		margin-top: 30px
+	.video__offer--items
+		padding-left: 0
+		padding-right: 0
+	.top__text
+		max-width: 320px
+	.internet__bg--title
+		font-size: 16px
+	.tv__channels
+		margin-top: 35px
+	.contact_form-input
+		&::placeholder
+			font-size: 16px
+		height: 50px
+	.application__button
+		height: 50px
+	.section__cotact_form
+		margin-top: 10px
+	.about__text
+		font-size: 16px
+		line-height: 1.2
 
 
 		

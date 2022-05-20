@@ -26,6 +26,7 @@
 	padding-right: 20px
 	background: #F4F4F4
 	border-radius: 11px
+	margin-top: 2px
 .navbar__wrapp
 	position: relative
 	display: flex
@@ -601,8 +602,6 @@ details
 
 //slider--finish
 //section__cotact_form
-.tel-input
-	margin-right: 0
 .section__application, .section__cotact_form
 	position: relative
 	height: auto
@@ -724,8 +723,14 @@ details
 		height: 168px
 		padding: 24px
 .media-footer--link
+	position: relative
+	img
+		border-radius: 8px
+		border: 1px solid #ffffff00
 	&:hover
-		filter: blur(1px)
+		img
+			border-radius: 8px
+			border: 1px solid $accent
 .application__item__button
 	position: absolute
 	bottom: -10px
@@ -1461,6 +1466,33 @@ details
 	&:hover
 		background: #fff 
 		color: #11A844
+
+.question__item[open]
+	border-radius: 20px
+	transition: background .3s ease
+	background: #f2f2f200
+	.question__item--title
+		margin-bottom: 20px
+		color: #fff
+		background: $accent
+		&::after
+			margin-left: 7px
+			content: url("#{$assetImages}/question__item__iconOpen.svg")
+			transition: all .3s
+.question__item--desc
+	background: #F2F2F2
+	position: relative
+	width: 100%
+	margin-left: 20px
+	align-self: flex-end
+	font-weight: 400
+	font-size: 23px
+	line-height: 38px
+	color: #1D1D1D
+	border-radius: 20px
+	padding: 30px 48px
+	margin-right: 50px
+	overflow: hidden
 .question__item
 	display: flex
 	position: relative
@@ -1470,21 +1502,18 @@ details
 	border-radius: 20px
 	margin-bottom: 23px
 	background: #F2F2F2
-	transition: all .3s
-.question__item[open]
-	border-radius: 20px
-	transition: background .3s ease
-	background: #f2f2f200
-	transition: all .3s
-	.question__item--title
-		margin-bottom: 20px
-		color: #fff
-		background: $accent
-		transition: all .3s
-		&::after
-			margin-left: 7px
-			content: url("#{$assetImages}/question__item__iconOpen.svg")
-			transition: all .3s
+// .question__item
+// 	height: 80px
+// 	transition: height 1s ease
+// 	&:not[open]
+// 		transition: height 1s ease
+// 		height: 80px
+// 	&[open]
+// 		height: 100%
+
+
+/* http://daneden.me/animate/ */
+
 .question__item--title
 	padding: 25px 40px 
 	border-radius: 20px
@@ -1512,20 +1541,7 @@ details
 	width: 100%
 	position: relative
 	text-align: left
-.question__item--desc
-	background: #F2F2F2
-	position: relative
-	width: 100%
-	margin-left: 20px
-	align-self: flex-end
-	font-weight: 400
-	font-size: 23px
-	line-height: 38px
-	color: #1D1D1D
-	border-radius: 20px
-	padding: 30px 48px
-	margin-right: 50px
-	transition: all .2s
+
 .contacts
 	position: relative
 	width: 100%
@@ -1586,6 +1602,9 @@ details
 .contacts__title
 	margin-bottom: $gutter
 .contact__item__link
+	font-size: 18px
 	margin-right: $gutter
 .contact__item__link--one
 	margin-bottom: $gutter
+.disabled 
+	pointer-events: none
