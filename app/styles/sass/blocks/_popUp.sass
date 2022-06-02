@@ -27,6 +27,26 @@
 		align-items: center
 		img
 			margin-bottom: 20px
+.popup__bg__three
+	.popup_form
+		flex-flow: column nowrap
+		justify-content: flex-start
+		align-items: center
+		.popup_form-label
+			flex-flow: column nowrap
+			justify-content: center
+			align-items: center
+		.popup_form-input
+			margin-right: 0
+			margin-bottom: 20px
+			max-width: none !important
+		.popup_form__button
+			max-width: none !important
+			margin-top: 30px
+	.popup__content
+		max-width: 460px
+		.section__popup_form
+			margin-top: 20px
 
 .popup, .popupTwo 
 	position: relative
@@ -180,6 +200,10 @@
 	border: 1px solid rgba(0, 0, 0, 0.3)
 	box-sizing: border-box
 	border-radius: 20px
+textarea.popup_form-input
+	padding-top: 15px
+	height: 100px
+	&::placeholder
 
 .popup__content--icon
 	display: flex
